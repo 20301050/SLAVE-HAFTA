@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - SLAVE HAFTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bordeaux-deep: #8B0000;
+            --bordeaux-dark: #6B0000;
+            --white: #FFFFFF;
+            --gold: #C9A84C;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #7a0000;
+            color: var(--white);
+            line-height: 1.8;
+        }
+        a { color: var(--gold); text-decoration: none; }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bordeaux-dark);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+        }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        .nav-links a:hover { color: var(--gold); }
+        .content {
+            max-width: 800px;
+            margin: 140px auto 80px;
+            padding: 0 30px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--gold);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin: 30px 0 15px;
+            color: var(--gold);
+        }
+        p { margin-bottom: 15px; color: rgba(255,255,255,0.9); }
+        .footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(201,168,76,0.2);
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .navbar { padding: 15px 30px; }
+            .nav-links { display: none; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SLAVE HAFTA</div>
+        <div class="nav-links">
+            <a href="index.html">ACCUEIL</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="panier.html">PANIER</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>POLITIQUE DE CONFIDENTIALITÉ</h1>
+
+        <h2>1. Collecte des données</h2>
+        <p>Nous collectons uniquement les informations que vous nous fournissez via nos formulaires : nom, prénom, email et message.</p>
+
+        <h2>2. Utilisation des données</h2>
+        <p>Vos données sont utilisées uniquement pour :</p>
+        <p>- Répondre à vos demandes de contact<br>
+        - Traiter vos précommandes<br>
+        - Vous informer des nouvelles collections</p>
+
+        <h2>3. Stockage</h2>
+        <p>Les données du panier sont stockées localement sur votre appareil (localStorage). Elles ne sont pas transmises à nos serveurs.</p>
+
+        <h2>4. Protection</h2>
+        <p>Vos données sont protégées et ne sont jamais vendues ou partagées avec des tiers.</p>
+
+        <h2>5. Vos droits</h2>
+        <p>Conformément au RGPD, vous avez le droit d'accéder, de modifier et de supprimer vos données. Contactez-nous à : <a href="mailto:gochakicia80@gmail.com">gochakicia80@gmail.com</a></p>
+
+        <h2>6. Cookies</h2>
+        <p>Notre site utilise uniquement les cookies nécessaires au fonctionnement du panier. Aucune donnée de tracking n'est utilisée.</p>
+
+        <h2>7. Contact</h2>
+        <p>Pour toute question, contactez-nous à : <a href="mailto:gochakicia80@gmail.com">gochakicia80@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+        <p style="color: var(--white);">© 2024 Slave Hafta. Tous droits réservés.</p>
+    </div>
+</body>
+</html>

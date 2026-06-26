@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Précommande - SLAVE HAFTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bordeaux-deep: #8B0000;
+            --bordeaux-dark: #6B0000;
+            --bordeaux-darker: #5a0000;
+            --white: #FFFFFF;
+            --gold: #C9A84C;
+            --gold-light: #D4AF37;
+            --cream: #F5F0E8;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #7a0000;
+            color: var(--white);
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bordeaux-darker);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-icon span:first-child {
+            font-size: 20px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: var(--gold);
+            color: var(--bordeaux-deep);
+            font-size: 11px;
+            font-weight: 700;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-link {
+            margin-top: 120px;
+            padding: 0 60px 40px;
+            text-align: center;
+        }
+
+        .back-link a {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            transition: color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: var(--gold-light);
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 0 60px 40px;
+        }
+
+        .page-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(35px, 5vw, 60px);
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .page-title .subtitle {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .page-title .divider {
+            width: 80px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 60px 100px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(201, 168, 76, 0.3);
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23C9A84C' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+        }
+
+        .form-group select option {
+            background: var(--bordeaux-dark);
+            color: var(--white);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: var(--white);
+            color: var(--bordeaux-deep);
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .btn-submit:hover {
+            background: var(--cream);
+        }
+
+        .footer {
+            padding: 40px 60px;
+            background: var(--bordeaux-darker);
+            text-align: center;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 30px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .back-link {
+                padding: 100px 30px 30px;
+            }
+
+            .page-title {
+                padding: 0 30px 30px;
+            }
+
+            .form-container {
+                padding: 0 30px 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SLAVE HAFTA</div>
+        <div class="nav-links">
+            <a href="collection.html">COLLECTION</a>
+            <a href="index.html#histoire">NOTRE HISTOIRE</a>
+            <a href="index.html#attente">LISTE D'ATTENTE</a>
+            <a href="index.html#contact">CONTACT</a>
+            <a href="panier.html" class="cart-icon">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="back-link">
+        <a href="collection.html">← RETOUR À LA COLLECTION</a>
+    </div>
+
+    <div class="page-title">
+        <h1>PRÉCOMMANDE</h1>
+        <p class="subtitle">RÉSERVEZ VOTRE PIÈCE ARTISANALE</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="form-container">
+        <form id="precommandeForm">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="article">Article souhaité</label>
+                <select id="article" name="article" required>
+                    <option value="">Sélectionnez un article</option>
+                    <option value="Veste Brodée Ivoire - 299 €">Veste Brodée Ivoire - 299 €</option>
+                    <option value="Robe Dos Nu Camel - 320 €">Robe Dos Nu Camel - 320 €</option>
+                    <option value="Blazer Noir Brodé - 350 €">Blazer Noir Brodé - 350 €</option>
+                    <option value="Ensemble Crop Top - 245 €">Ensemble Crop Top - 245 €</option>
+                    <option value="Tunique Brodée - 210 €">Tunique Brodée - 210 €</option>
+                    <option value="Gilet Ceinturé - 189 €">Gilet Ceinturé - 189 €</option>
+                    <option value="Robe Brodée Blush - 275 €">Robe Brodée Blush - 275 €</option>
+                    <option value="Manteau Long - 340 €">Manteau Long - 340 €</option>
+                    <option value="Jogging Brodé Ivoire - 165 €">Jogging Brodé Ivoire - 165 €</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">ENVOYER</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">SLAVE HAFTA</div>
+        <p class="footer-text">© 2024 Slave Hafta. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.getElementById('cartCount').textContent = cart.length;
+
+        document.getElementById('precommandeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci ! Votre précommande a été envoyée. Nous vous contacterons bientôt.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

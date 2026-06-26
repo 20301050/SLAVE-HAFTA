@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier - SLAVE HAFTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bordeaux-deep: #8B0000;
+            --bordeaux-dark: #6B0000;
+            --bordeaux-darker: #5a0000;
+            --white: #FFFFFF;
+            --gold: #C9A84C;
+            --gold-light: #D4AF37;
+            --cream: #F5F0E8;
+            --red: #cc0000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #7a0000;
+            color: var(--white);
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bordeaux-darker);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-icon span {
+            font-size: 20px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: var(--gold);
+            color: var(--bordeaux-deep);
+            font-size: 11px;
+            font-weight: 700;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-link {
+            margin-top: 120px;
+            padding: 0 60px 40px;
+            text-align: center;
+        }
+
+        .back-link a {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            transition: color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: var(--gold-light);
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 0 60px 40px;
+        }
+
+        .page-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(35px, 5vw, 60px);
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .page-title .divider {
+            width: 80px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 60px 100px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--bordeaux-dark);
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .cart-item-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .cart-item-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: var(--gold);
+        }
+
+        .btn-delete {
+            padding: 10px 20px;
+            background: var(--red);
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-delete:hover {
+            background: #aa0000;
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 20px;
+            background: var(--bordeaux-dark);
+            margin-bottom: 30px;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .cart-total-label {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+
+        .cart-total-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .btn-checkout {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: var(--white);
+            color: var(--bordeaux-deep);
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-checkout:hover {
+            background: var(--cream);
+        }
+
+        .empty-cart {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--bordeaux-dark);
+        }
+
+        .empty-cart p {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            padding: 40px 60px;
+            background: var(--bordeaux-darker);
+            text-align: center;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 30px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .cart-container {
+                padding: 0 30px 80px;
+            }
+
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .btn-delete {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SLAVE HAFTA</div>
+        <div class="nav-links">
+            <a href="collection.html">COLLECTION</a>
+            <a href="index.html#histoire">NOTRE HISTOIRE</a>
+            <a href="index.html#attente">LISTE D'ATTENTE</a>
+            <a href="index.html#contact">CONTACT</a>
+            <a href="panier.html" class="cart-icon">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="back-link">
+        <a href="collection.html">← CONTINUER MES ACHATS</a>
+    </div>
+
+    <div class="page-title">
+        <h1>MON PANIER</h1>
+        <div class="divider"></div>
+    </div>
+
+    <div class="cart-container" id="cartContainer">
+        <div class="empty-cart" id="emptyCart">
+            <p>Votre panier est vide</p>
+            <a href="collection.html" style="color: var(--gold); font-size: 13px; letter-spacing: 2px; text-transform: uppercase;">DÉCOUVRIR LA COLLECTION</a>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <span class="cart-total-label">TOTAL</span>
+            <span class="cart-total-price" id="totalPrice">0 €</span>
+        </div>
+        <button class="btn-checkout" id="btnCheckout" onclick="window.location.href='paiement.html'" style="display: none;">
+            PROCÉDER AU PAIEMENT →
+        </button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">SLAVE HAFTA</div>
+        <p class="footer-text">© 2024 Slave Hafta. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartDisplay() {
+            const cartItems = document.getElementById('cartItems');
+            const emptyCart = document.getElementById('emptyCart');
+            const cartTotal = document.getElementById('cartTotal');
+            const btnCheckout = document.getElementById('btnCheckout');
+            const cartCount = document.getElementById('cartCount');
+
+            cartCount.textContent = cart.length;
+
+            if (cart.length === 0) {
+                emptyCart.style.display = 'block';
+                cartItems.innerHTML = '';
+                cartTotal.style.display = 'none';
+                btnCheckout.style.display = 'none';
+                return;
+            }
+
+            emptyCart.style.display = 'none';
+            cartTotal.style.display = 'flex';
+            btnCheckout.style.display = 'block';
+
+            cartItems.innerHTML = cart.map((item, index) => `
+                <div class="cart-item">
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-price">${item.price}</div>
+                    </div>
+                    <button class="btn-delete" onclick="removeFromCart(${index})">SUPPRIMER</button>
+                </div>
+            `).join('');
+
+            let total = cart.reduce((sum, item) => sum + parseInt(item.price.replace(' €', '')), 0);
+            document.getElementById('totalPrice').textContent = total + ' €';
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartDisplay();
+        }
+
+        updateCartDisplay();
+    </script>
+</body>
+</html>
