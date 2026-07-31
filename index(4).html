@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAVE HAFTA - Mode Artisanale Polonaise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bordeaux-deep: #8B0000;
+            --bordeaux-dark: #6B0000;
+            --white: #FFFFFF;
+            --gold: #C9A84C;
+            --gold-light: #D4AF37;
+            --cream: #F5F0E8;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bordeaux-deep);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bordeaux-deep);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            color: var(--white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-icon span:first-child {
+            font-size: 20px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: var(--gold);
+            color: var(--bordeaux-deep);
+            font-size: 11px;
+            font-weight: 700;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: block;
+            min-height: auto;
+            margin-top: 80px;
+        }
+
+        .hero-video-wrap {
+            position: relative;
+        }
+
+        .hero-video-wrap video {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-video-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 45%);
+            display: flex;
+            align-items: center;
+            padding-left: 48px;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(40px, 7vw, 80px);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .hero-title .line1 {
+            color: var(--white);
+            display: block;
+        }
+
+        .hero-title .line2 {
+            color: var(--gold);
+            display: block;
+        }
+
+        .hero-cta-row {
+            text-align: center;
+            padding: 40px 32px 24px;
+            background: var(--bordeaux-deep);
+        }
+
+        .hero-description {
+            font-size: 14px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--white);
+            color: var(--bordeaux-deep);
+            padding: 16px 32px;
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: fit-content;
+        }
+
+        .btn-primary:hover {
+            background: var(--cream);
+            transform: translateX(5px);
+        }
+
+        .hero-images {
+            display: flex;
+            gap: 10px;
+            padding: 30px 32px 50px;
+            background: var(--bordeaux-deep);
+        }
+
+        .hero-image-frame {
+            position: relative;
+            width: calc(33.333% - 7px);
+            height: 850px;
+            overflow: hidden;
+        }
+
+        .hero-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: rgba(0,0,0,0.15);
+            transition: transform 0.4s ease;
+        }
+
+        .hero-image-frame:hover img {
+            transform: scale(1.04);
+        }
+
+        .hero-image-frame .frame-text {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: var(--white);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        /* NOUVELLE PIECE SECTION */
+        .nouvelle-piece {
+            padding: 100px 60px;
+            background: var(--bordeaux-deep);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(35px, 5vw, 60px);
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 60px;
+            color: var(--white);
+        }
+
+        .products-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            width: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:nth-child(2) {
+            transform: translateY(30px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            cursor: pointer;
+        }
+
+        .product-info {
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .product-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .btn-small {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--white);
+            color: var(--bordeaux-deep);
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-small:hover {
+            background: var(--cream);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #CC0000;
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+        }
+
+        /* NOTRE HISTOIRE SECTION */
+        .notre-histoire {
+            display: flex;
+            background: var(--bordeaux-deep);
+        }
+
+        .histoire-image {
+            flex: 1;
+        }
+
+        .histoire-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            min-height: 600px;
+        }
+
+        .histoire-content {
+            flex: 1;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-label {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .histoire-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(30px, 4vw, 48px);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+
+        .histoire-title .white {
+            color: var(--white);
+        }
+
+        .histoire-title .gold {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .histoire-divider {
+            width: 80px;
+            height: 1px;
+            background: var(--gold);
+            margin-bottom: 30px;
+        }
+
+        .histoire-text {
+            font-size: 14px;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 20px;
+        }
+
+        .histoire-stats {
+            display: flex;
+            gap: 30px;
+            margin: 30px 0;
+            padding: 20px 0;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            color: var(--gold-light);
+        }
+
+        /* COLLECTION SECTION */
+        .collection {
+            padding: 100px 60px;
+            background: linear-gradient(180deg, var(--bordeaux-deep) 0%, #7a0000 100%);
+        }
+
+        .collection-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            padding: 80px 60px;
+            background: var(--bordeaux-dark);
+            text-align: center;
+        }
+
+        .contact-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(201, 168, 76, 0.3);
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* FOOTER */
+        .footer {
+            padding: 40px 60px;
+            background: var(--bordeaux-dark);
+            text-align: center;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-email {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* FLOATING HELP BUTTON */
+        .help-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--bordeaux-deep);
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            z-index: 999;
+        }
+
+        .help-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* LIGHTBOX */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: var(--white);
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+
+        .lightbox-close:hover {
+            color: var(--gold);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .hero-images {
+                flex-wrap: wrap;
+            }
+
+            .hero-image-frame {
+                width: 100%;
+                height: 550px;
+            }
+
+            .notre-histoire {
+                flex-direction: column;
+            }
+
+            .histoire-image img {
+                min-height: 400px;
+            }
+
+            .navbar {
+                padding: 15px 30px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .nouvelle-piece,
+            .collection,
+            .contact {
+                padding: 60px 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .products-row,
+            .collection-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .product-card:nth-child(2) {
+                transform: none;
+            }
+
+            .histoire-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+       <div class="logo" style="display:flex; align-items:center; gap:10px;"><img src="logo-slave-hafta-rond(1).png" alt="Slave Hafta" style="height:45px; width:45px; border-radius:50%; object-fit:cover;">SLAVE HAFTA</div>
+        <div class="nav-links">
+            <a href="collection.html">COLLECTION</a>
+            <a href="#histoire">NOTRE HISTOIRE</a>
+            <a href="#attente">LISTE D'ATTENTE</a>
+            <a href="#contact">CONTACT</a>
+            <a href="panier.html" class="cart-icon">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="accueil">
+        <div class="hero-video-wrap">
+            <video src="Full-body_fashion_editorial_video__6_202607311408.mp4" autoplay muted loop playsinline controls style="background:#333;"></video>
+            <div class="hero-video-overlay">
+                <h1 class="hero-title"><span class="line1">SLAVE</span><span class="line2">HAFTA</span></h1>
+            </div>
+        </div>
+        <div class="hero-cta-row">
+            <p class="hero-description">Pièces brodées artisanales inspirées du folklore polonais ancestral — réinterprétées pour la femme moderne qui ose.</p>
+            <a href="collection.html" class="btn-primary">DÉCOUVRIR LA COLLECTION<span>→</span></a>
+        </div>
+        <div class="hero-images">
+            <div class="hero-image-frame">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-24 at 18.11.51(3).jpeg" alt="Photo 4">
+                <div class="frame-text">SLAVE HAFTA</div>
+            </div>
+            <div class="hero-image-frame">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-24 at 18.09.59(3).jpeg" alt="Photo 3">
+                <div class="frame-text">SLAVE HAFTA</div>
+            </div>
+            <div class="hero-image-frame">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-26 at 00.47.14.jpeg" alt="Photo 7">
+                <div class="frame-text">SLAVE HAFTA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOUVELLE PIECE SECTION -->
+    <section class="nouvelle-piece" id="collection">
+        <h2 class="section-title">Nouvelle Pièce</h2>
+        <div class="products-row">
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-24 at 17.49.15(1).jpeg" alt="Photo 2" class="lightbox-img">
+                <div class="product-info">
+                    <h3 class="product-name">Veste Brodée Col Montant</h3>
+                    <p class="product-price">380 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Veste Brodée Col Montant" data-price="380 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-24 at 12.15.22(2).jpeg" alt="Photo 1" class="lightbox-img">
+                <div class="product-info">
+                    <h3 class="product-name">Robe Dos Nu Camel Brodée</h3>
+                    <p class="product-price">420 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Robe Dos Nu Camel Brodée" data-price="420 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-25 at 14.25.42(2).jpeg" alt="Photo 6" class="lightbox-img">
+                <div class="product-info">
+                    <h3 class="product-name">Robe Brodée Beige</h3>
+                    <p class="product-price">350 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Robe Brodée Beige" data-price="350 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLECTION SECTION -->
+    <section class="collection" id="attente">
+        <h2 class="section-title">Collection</h2>
+        <div class="collection-grid">
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-25 at 13.26.14(1).jpeg" alt="Photo 5" class="lightbox-img">
+                <span class="product-badge badge-edition">ÉDITION LIMITÉE</span>
+                <div class="product-info">
+                    <h3 class="product-name">Manteau Long Noir Brodé</h3>
+                    <p class="product-price">480 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Manteau Long Noir Brodé" data-price="480 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-26 at 02.13.41.jpeg" alt="Photo 9" class="lightbox-img">
+                <span class="product-badge badge-coup">COUP DE CŒUR</span>
+                <div class="product-info">
+                    <h3 class="product-name">Robe Évasée Noire Brodée</h3>
+                    <p class="product-price">390 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Robe Évasée Noire Brodée" data-price="390 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="PLANOGRAMME/WhatsApp Image 2026-06-26 at 07.48.53.jpeg" alt="Photo 10" class="lightbox-img">
+                <span class="product-badge badge-precommande">PRÉCOMMANDE</span>
+                <div class="product-info">
+                    <h3 class="product-name">Ensemble Tailleur Noir Brodé</h3>
+                    <p class="product-price">450 €</p>
+                    <a href="#" class="btn-small add-to-cart" data-name="Ensemble Tailleur Noir Brodé" data-price="450 €">PRÉCOMMANDER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTRE HISTOIRE SECTION -->
+    <section class="notre-histoire" id="histoire">
+        <div class="histoire-image">
+            <img src="PLANOGRAMME/WhatsApp Image 2026-06-26 at 00.59.51.jpeg" alt="Notre Histoire">
+        </div>
+        <div class="histoire-content">
+            <span class="section-label">Notre Histoire</span>
+            <h2 class="histoire-title">
+                <span class="white">L'âme slave,</span><br>
+                <span class="gold">taillée dans l'ombre</span>
+            </h2>
+            <div class="histoire-divider"></div>
+            <p class="histoire-text">
+                SLAVE HAFTA est née d'une passion pour le folklore slave et l'esthétique dark feminine. Chaque pièce est brodée à la main, inspirée des traditions polonaises ancestrales, réinterprétée pour la femme moderne qui ose.
+            </p>
+            <p class="histoire-text">
+                Nos broderies portent des symboles slaves millénaires. Chaque pièce est unique, produite en édition limitée, pensée pour durer.
+            </p>
+            <div class="histoire-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Brodé à la main</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Limité</span>
+                    <span class="stat-label">Édition</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">PL</span>
+                    <span class="stat-label">Folklore Polonais</span>
+                </div>
+            </div>
+            <a href="#attente" class="btn-link">
+                REJOINDRE LA LISTE D'ATTENTE →
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Contactez-nous</h2>
+        <p class="contact-text">Rejoignez la liste d'attente pour être informé des nouvelles pièces.</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message (optionnel)"></textarea>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                ENVOYER
+                <span>→</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">SLAVE HAFTA</div>
+        <p class="footer-email"><a href="mailto:gochakicia80@gmail.com" style="color: var(--gold);">gochakicia80@gmail.com</a></p>
+        <p class="footer-links">
+            <a href="mentions-legales.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">MENTIONS LÉGALES</a>
+            &nbsp;|&nbsp;
+            <a href="politique-confidentialite.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">CONFIDENTIALITÉ</a>
+            &nbsp;|&nbsp;
+            <a href="conditions-generales.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">CGV</a>
+        </p>
+        <p class="footer-text">© 2024 Slave Hafta. Tous droits réservés.</p>
+    </footer>
+
+    <!-- FLOATING HELP BUTTON -->
+    <div class="help-btn">?</div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="Image agrandie" id="lightboxImg">
+    </div>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.getElementById('cartCount').textContent = cart.length;
+
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
+                cart.push({ name, price });
+                localStorage.setItem('cart', JSON.stringify(cart));
+                document.getElementById('cartCount').textContent = cart.length;
+                alert(name + ' a été ajouté au panier !');
+            });
+        });
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        document.querySelectorAll('.lightbox-img').forEach(img => {
+            img.addEventListener('click', function() {
+                lightboxImg.src = this.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Merci ! Votre inscription a été envoyée.');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
