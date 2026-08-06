@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /panier.html
+Disallow: /paiement.html
+Disallow: /mentions-legales.html
+Disallow: /politique-confidentialite.html
+Disallow: /conditions-generales.html
+
+Sitemap: https://20301050.github.io/SLAVE-HAFTA/sitemap.xml
