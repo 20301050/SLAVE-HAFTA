@@ -258,6 +258,28 @@
             text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
         }
 
+        .hero-image-frame .frame-cta {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,0.95);
+            color: var(--bordeaux-deep);
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 12px 22px;
+            white-space: nowrap;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .hero-image-frame .frame-cta:hover {
+            background: var(--gold);
+            color: var(--white);
+        }
+
         /* NOUVELLE PIECE SECTION */
         .nouvelle-piece {
             padding: 100px 60px;
@@ -745,14 +767,17 @@
             <div class="hero-image-frame">
                 <video src="video-hero-1.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
                 <div class="frame-text">SLAVE HAFTA</div>
+                <a href="collection.html" class="frame-cta">Découvrez notre tailleur →</a>
             </div>
             <div class="hero-image-frame">
                 <video src="video-hero-2.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
                 <div class="frame-text">SLAVE HAFTA</div>
+                <a href="collection.html" class="frame-cta">Découvrez nos robes →</a>
             </div>
             <div class="hero-image-frame">
-                <video src="video-hero-3.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
+                <video src="tunique-brodee-femme-slave-hafta.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
                 <div class="frame-text">SLAVE HAFTA</div>
+                <a href="collection.html" class="frame-cta">Découvrez nos tuniques brodées →</a>
             </div>
         </div>
     </section>
