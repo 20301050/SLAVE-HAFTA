@@ -106,7 +106,7 @@
     '<p>Chaque pièce SLAVE HAFTA est fabriquée pour vous, en édition limitée. Pas de stock : rien n’est produit pour rien.</p>' +
     '<ol class="pc-steps">' +
     '<li><b>Vous précommandez</b><span>Choisissez votre taille et réglez votre commande en ligne.</span></li>' +
-    '<li><b>Nous brodons votre pièce</b><span>Elle est confectionnée et brodée à la machine dans notre atelier partenaire.</span></li>' +
+    '<li><b>Nous brodons votre pièce</b><span>Elle est confectionnée et brodée dans notre atelier partenaire.</span></li>' +
     '<li><b>Vous la recevez</b><span>Expédition sous 4 à 6 semaines (délai indicatif), avec un e-mail de suivi.</span></li>' +
     '</ol>' +
     '<p style="margin-top:16px">Une question sur votre commande ? Écrivez-nous depuis la page Contact.</p></div>';
