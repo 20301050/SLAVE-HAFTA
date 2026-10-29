@@ -48,7 +48,7 @@
   dr.innerHTML = '<div class="sh-head"><h2>Votre panier</h2><button class="sh-x" type="button" aria-label="Fermer le panier">×</button></div>' +
     '<ul class="sh-list"></ul><div class="sh-foot"><div class="sh-total"><span>Total</span><span class="sh-sum">0 €</span></div>' +
     '<p class="sh-note">Précommande : chaque pièce est brodée après votre commande. Délai indiqué à titre d’exemple : 4 à 6 semaines.</p>' +
-    '<button class="sh-go" type="button">Valider ma précommande</button><p class="sh-msg" role="status" aria-live="polite"></p></div>';
+    '<button class="sh-go" type="button">Passer la commande</button><p class="sh-msg" role="status" aria-live="polite"></p></div>';
   var toast = document.createElement('div'); toast.className = 'sh-toast'; toast.setAttribute('role', 'status'); toast.setAttribute('aria-live', 'polite');
   document.body.appendChild(veil); document.body.appendChild(dr); document.body.appendChild(toast);
 
@@ -92,8 +92,9 @@
   dr.querySelector('.sh-x').addEventListener('click', fermer);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !dr.hidden) fermer(); });
   dr.querySelector('.sh-go').addEventListener('click', function () {
-    ecrire([]); rendre(); compter();
-    dr.querySelector('.sh-msg').textContent = 'Merci ! Votre précommande est enregistrée. (Maquette : aucune commande réelle.)';
+    var l = lire(); if (!l.length) return;
+    fermer();
+    if (window.shCommande) window.shCommande(l, function () { ecrire([]); rendre(); compter(); });
   });
   document.querySelectorAll('.sh-cart').forEach(function (b) { b.addEventListener('click', ouvrir); });
 
