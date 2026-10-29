@@ -1,731 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vêtements Femme Brodés Artisanaux | SLAVE HAFTA</title>
-    <meta name="description" content="SLAVE HAFTA crée des vêtements femme brodés à la main, inspirés du folklore slave et de la broderie polonaise ancestrale. Robes, vestes et ensembles en édition limitée.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://20301050.github.io/SLAVE-HAFTA/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vêtements Femme Brodés Artisanaux | Mode Slave & Broderie Polonaise – SLAVE HAFTA">
-    <meta property="og:description" content="Vêtements femme brodés à la main, inspirés du folklore slave et de la broderie polonaise ancestrale. Pièces uniques en édition limitée.">
-    <meta property="og:url" content="https://20301050.github.io/SLAVE-HAFTA/">
-    <meta property="og:site_name" content="SLAVE HAFTA">
-    <meta property="og:image" content="https://20301050.github.io/SLAVE-HAFTA/PLANOGRAMME/manteau-long-noir-brode-femme-slave-hafta.jpg">
-    <meta property="og:locale" content="fr_FR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vêtements Femme Brodés Artisanaux | Mode Slave & Broderie Polonaise – SLAVE HAFTA">
-    <meta name="twitter:description" content="Vêtements femme brodés à la main, inspirés du folklore slave et de la broderie polonaise ancestrale. Pièces uniques en édition limitée.">
-    <meta name="twitter:image" content="https://20301050.github.io/SLAVE-HAFTA/PLANOGRAMME/manteau-long-noir-brode-femme-slave-hafta.jpg">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bordeaux-deep: #8B0000;
-            --bordeaux-dark: #6B0000;
-            --white: #FFFFFF;
-            --gold: #C9A84C;
-            --gold-light: #D4AF37;
-            --cream: #F5F0E8;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: var(--bordeaux-deep);
-            color: var(--white);
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: var(--bordeaux-deep);
-            padding: 20px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: 6px;
-            color: var(--white);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--white);
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 28px;
-            cursor: pointer;
-            line-height: 1;
-            padding: 0;
-        }
-
-        .cart-icon {
-            position: relative;
-            cursor: pointer;
-        }
-
-        .cart-icon span:first-child {
-            font-size: 20px;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -10px;
-            background: var(--gold);
-            color: var(--bordeaux-deep);
-            font-size: 11px;
-            font-weight: 700;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            display: block;
-            min-height: auto;
-            margin-top: 80px;
-        }
-
-        .hero-video-wrap {
-            position: relative;
-        }
-
-        .hero-video-wrap video {
-            width: 100%;
-            height: 650px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .hero-video-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 45%);
-            display: flex;
-            align-items: center;
-            padding-left: 48px;
-        }
-
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(40px, 7vw, 80px);
-            font-weight: 700;
-            line-height: 1.1;
-        }
-
-        .hero-title .line1 {
-            color: var(--white);
-            display: block;
-        }
-
-        .hero-title .line2 {
-            color: var(--gold);
-            display: block;
-        }
-
-        .hero-cta-row {
-            text-align: center;
-            padding: 40px 32px 24px;
-            background: var(--bordeaux-deep);
-        }
-
-        .hero-description {
-            font-size: 14px;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.85);
-            max-width: 600px;
-            margin: 0 auto 24px;
-            text-align: center;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: var(--white);
-            color: var(--bordeaux-deep);
-            padding: 16px 32px;
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: fit-content;
-        }
-
-        .btn-primary:hover {
-            background: var(--cream);
-            transform: translateX(5px);
-        }
-
-        .hero-images {
-            display: flex;
-            gap: 10px;
-            padding: 30px 32px 50px;
-            background: var(--bordeaux-deep);
-        }
-
-        .hero-image-frame {
-            position: relative;
-            width: calc(33.333% - 7px);
-            height: 850px;
-            overflow: hidden;
-        }
-
-        .hero-image-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            background: rgba(0,0,0,0.15);
-            transition: transform 0.4s ease;
-        }
-
-        .hero-image-frame:hover img {
-            transform: scale(1.04);
-        }
-
-        .hero-image-frame .frame-text {
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 4px;
-            color: var(--white);
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-        }
-
-        .hero-image-frame .frame-cta {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(255,255,255,0.95);
-            color: var(--bordeaux-deep);
-            font-family: 'Lato', sans-serif;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            padding: 12px 22px;
-            white-space: nowrap;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        .hero-image-frame .frame-cta:hover {
-            background: var(--gold);
-            color: var(--white);
-        }
-
-        /* NOUVELLE PIECE SECTION */
-        .nouvelle-piece {
-            padding: 100px 60px;
-            background: var(--bordeaux-deep);
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(35px, 5vw, 60px);
-            font-weight: 700;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 60px;
-            color: var(--white);
-        }
-
-        .products-row {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .product-card {
-            width: 320px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-card:nth-child(2) {
-            transform: translateY(30px);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            object-position: top;
-            display: block;
-            cursor: pointer;
-        }
-
-        .product-info {
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .product-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 8px;
-        }
-
-        .product-price {
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--gold);
-            margin-bottom: 12px;
-        }
-
-        .btn-small {
-            display: inline-block;
-            padding: 8px 20px;
-            background: var(--white);
-            color: var(--bordeaux-deep);
-            font-family: 'Lato', sans-serif;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .btn-small:hover {
-            background: var(--cream);
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: #CC0000;
-            color: var(--white);
-            font-family: 'Lato', sans-serif;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 8px 16px;
-        }
-
-        /* NOTRE HISTOIRE SECTION */
-        .notre-histoire {
-            display: flex;
-            background: var(--bordeaux-deep);
-        }
-
-        .histoire-image {
-            flex: 1;
-        }
-
-        .histoire-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            min-height: 600px;
-        }
-
-        .histoire-content {
-            flex: 1;
-            padding: 80px 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .section-label {
-            font-family: 'Lato', sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .histoire-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(30px, 4vw, 48px);
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 30px;
-        }
-
-        .histoire-title .white {
-            color: var(--white);
-        }
-
-        .histoire-title .gold {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .histoire-divider {
-            width: 80px;
-            height: 1px;
-            background: var(--gold);
-            margin-bottom: 30px;
-        }
-
-        .histoire-text {
-            font-size: 14px;
-            line-height: 1.9;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: 20px;
-        }
-
-        .histoire-stats {
-            display: flex;
-            gap: 30px;
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid rgba(201, 168, 76, 0.2);
-            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--gold);
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 11px;
-            color: rgba(255, 255, 255, 0.7);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }
-
-        .btn-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-link:hover {
-            color: var(--gold-light);
-        }
-
-        /* COLLECTION SECTION */
-        .collection {
-            padding: 100px 60px;
-            background: linear-gradient(180deg, var(--bordeaux-deep) 0%, #7a0000 100%);
-        }
-
-        .collection-grid {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 60px;
-        }
-
-        /* CONTACT SECTION */
-        .contact {
-            padding: 80px 60px;
-            background: var(--bordeaux-dark);
-            text-align: center;
-        }
-
-        .contact-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 20px;
-        }
-
-        .contact-text {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 30px;
-        }
-
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 15px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(201, 168, 76, 0.3);
-            color: var(--white);
-            font-family: 'Lato', sans-serif;
-            font-size: 14px;
-        }
-
-        .contact-form input::placeholder,
-        .contact-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .contact-form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        /* FOOTER */
-        .footer {
-            padding: 40px 60px;
-            background: var(--bordeaux-dark);
-            text-align: center;
-            border-top: 1px solid rgba(201, 168, 76, 0.2);
-        }
-
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            color: var(--white);
-            margin-bottom: 15px;
-        }
-
-        .footer-text {
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .footer-email {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        /* FLOATING HELP BUTTON */
-        .help-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: var(--bordeaux-deep);
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-            z-index: 999;
-        }
-
-        .help-btn:hover {
-            transform: scale(1.1);
-        }
-
-        /* LIGHTBOX */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox.active {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            color: var(--white);
-            cursor: pointer;
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-        }
-
-        .lightbox-close:hover {
-            color: var(--gold);
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 1024px) {
-            .hero-images {
-                flex-wrap: wrap;
-            }
-
-            .hero-image-frame {
-                width: 100%;
-                height: 550px;
-            }
-
-            .notre-histoire {
-                flex-direction: column;
-            }
-
-            .histoire-image img {
-                min-height: 400px;
-            }
-
-            .navbar {
-                padding: 15px 30px;
-            }
-
-            .nav-links {
-                gap: 20px;
-            }
-
-            .nouvelle-piece,
-            .collection,
-            .contact {
-                padding: 60px 30px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .navbar {
-                position: fixed;
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                align-items: flex-start;
-                background: var(--bordeaux-deep);
-                padding: 20px 30px;
-                gap: 18px;
-                border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .products-row,
-            .collection-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .product-card {
-                width: 100%;
-                max-width: 350px;
-            }
-
-            .product-card:nth-child(2) {
-                transform: none;
-            }
-
-            .histoire-stats {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SLAVE HAFTA · Vêtements femme brodés</title>
+<meta name="description" content="Vêtements femme brodés inspirés des broderies slaves d'Europe de l'Est : robes, tailleurs, tuniques en édition limitée et en précommande.">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
 <script>
@@ -733,310 +12,458 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-9KBSCJ3QW9');
-</script> </head>
+</script>
+<link rel="icon" href="logo-rond.webp">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700;800&family=Lato:wght@300;400;700&display=swap">
+<style>
+/* Charte SLAVE HAFTA conservée : fond bordeaux, texte blanc, accents or, titres Playfair, texte Lato.
+   Mise en page : vidéo plein cadre, lettres géantes entre le fond et la mannequin, puis bande de 3 vidéos qui défilent. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --red:#CC0000; --gold:#C9A84C; --gold-light:#D4AF37;
+  --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --letters:rgba(255,255,255,.92);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Barre maquette */
+.mock{background:var(--ink);font-size:12px;letter-spacing:.06em}
+.mock .in{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;padding-block:8px}
+.mock .in span{opacity:.75}
+.mock b{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.14em}
+.seg{display:inline-flex;gap:4px;align-items:center}
+.seg span{opacity:.7;margin-right:4px}
+.seg button{font:inherit;color:var(--cream);background:transparent;border:1px solid rgba(201,168,76,.45);border-radius:999px;padding:3px 11px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.seg button:focus-visible,.btn:focus-visible,.nav a:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* Menu */
+.nav{background:var(--bordeaux)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover{color:var(--gold)}
+@media (max-width:760px){.links>*:not(.sh-cart):not(.sh-burger){display:none}.links{gap:10px}}
+
+/* Hero */
+.hero{position:relative;height:min(78vh,56.25vw + 120px);min-height:460px;overflow:hidden;background:#8c8c8f}
+.hero.solid{background:radial-gradient(ellipse at 50% 70%,#9a1010 0%,var(--bordeaux-dark) 60%,#3d0000 100%)}
+.layer{position:absolute;inset:0;width:100%;height:100%;display:block}
+#bg{z-index:1}
+.hero.solid #bg{visibility:hidden}
+.letters{position:absolute;left:0;right:0;top:50%;transform:translateY(-58%);z-index:2;pointer-events:none;overflow:hidden}
+.track{display:flex;width:max-content;animation:slide 26s linear infinite}
+.track span{font-family:var(--display);font-weight:800;font-size:clamp(120px,24vh + 6vw,330px);line-height:.9;letter-spacing:.02em;color:var(--letters);white-space:nowrap;padding-right:.35em}
+.hero.gold .track span{color:transparent;-webkit-text-stroke:0;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text}
+@keyframes slide{to{transform:translateX(-50%)}}
+#fg{z-index:3}
+.cta{display:flex;justify-content:center;padding-block:34px 0}
+.btn{display:inline-block;font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--white);background:transparent;border:1px solid var(--gold);padding:14px 30px}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Bande 3 vidéos */
+.reel{position:relative;padding-block:0 56px;overflow:hidden}
+.reel-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.reel-head h2{margin:0;font-family:var(--script);font-style:italic;font-weight:500;font-size:clamp(34px,5vw,56px);line-height:1;color:var(--gold);text-wrap:balance}
+.reel-head p{margin:0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+.belt{position:relative}
+.panels{display:flex;gap:0;width:max-content;animation:slide 40s linear infinite reverse}
+.panel{position:relative;width:clamp(220px,30vw,400px);aspect-ratio:9/16;max-width:100%;overflow:hidden;background:var(--bordeaux-dark);flex:none;text-decoration:none;color:var(--white)}
+.panel video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.panel:hover video{transform:scale(1.04)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,0,0,.25),transparent 30%,transparent 70%,rgba(43,0,0,.7))}
+.panel .lab{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.panel .lab strong{font-family:var(--display);font-size:22px;font-weight:600}
+.panel .lab em{font-style:normal;font-size:11px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+.ribbon{position:absolute;left:-5%;right:-5%;top:50%;transform:translateY(-50%) rotate(-4deg);z-index:2;background:var(--bordeaux-dark);border-block:1px solid var(--gold);pointer-events:none;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.ribbon .track{animation-duration:20s;animation-direction:reverse}
+.ribbon .track span{font-family:var(--display);font-weight:700;font-size:clamp(18px,2.4vw,28px);letter-spacing:.3em;color:var(--gold-light);padding:10px 0 10px 1.2em;line-height:1.4}
+.ribbon .track span i{font-style:normal;color:var(--white);padding-left:1.2em}
+.name{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;pointer-events:none;text-align:center;padding-inline:16px}
+.name span{font-family:var(--display);font-weight:700;font-size:clamp(46px,9vw,128px);line-height:1;letter-spacing:.12em;padding-left:.12em;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(43,0,0,.75))}
+.name em{font-family:var(--script);font-style:italic;font-size:clamp(18px,2.2vw,26px);color:var(--cream);text-shadow:0 2px 10px rgba(43,0,0,.9)}
+/* Effets bandeau vidéo : bords en fondu, panneaux qui apparaissent en cascade, nom de ville qui monte */
+.belt{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%)}
+@media (max-width:640px){.belt{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%)}}
+.panel{animation:panelIn 900ms cubic-bezier(.23,1,.32,1) both}
+.panel:nth-child(1){animation-delay:100ms}.panel:nth-child(2){animation-delay:220ms}.panel:nth-child(3){animation-delay:340ms}.panel:nth-child(4){animation-delay:460ms}.panel:nth-child(n+5){animation-delay:580ms}
+@keyframes panelIn{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:none}}
+.panel video{filter:saturate(.9) brightness(.92);transition:transform .6s ease,filter .6s ease}
+.panel:hover video{filter:saturate(1.05) brightness(1)}
+.place{animation:placeIn 800ms cubic-bezier(.23,1,.32,1) 900ms both}
+.place strong::after{content:"";display:block;width:28px;height:1px;margin:6px auto 2px;background:var(--gold);transform-origin:center;animation:lineIn 700ms cubic-bezier(.23,1,.32,1) 1300ms both}
+@keyframes placeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes lineIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.panel,.place,.place strong::after{animation:none}.panel video{transition:none}}
+.belt::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse 55% 45% at 50% 50%,rgba(43,0,0,.55),transparent 75%)}
+.place{position:absolute;left:0;right:0;bottom:20px;z-index:1;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.place strong{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.32em;padding-left:.32em;text-transform:uppercase;color:var(--white)}
+.place em{font-family:var(--script);font-style:italic;font-size:15px;color:var(--gold-light)}
+.excl{padding-block:72px 64px;background:var(--bordeaux-dark)}
+.excl-head{text-align:center;margin-bottom:34px}
+.excl-head h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(26px,3.4vw,40px);letter-spacing:.18em;padding-left:.18em;text-transform:uppercase;color:var(--gold-light);text-wrap:balance}
+.excl-head p{margin:10px 0 0;font-family:var(--script);font-style:italic;font-size:clamp(17px,1.8vw,21px);color:var(--cream)}
+.excl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:1080px;margin-inline:auto;align-items:start}
+.excl-grid figure.mid{margin-top:48px}
+.excl-grid figcaption{margin-top:14px;text-align:center;font-family:var(--display);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--cream)}
+.excl-grid figure{margin:0;max-width:100%}
+.excl-grid figure img{aspect-ratio:1/2;border:1px solid rgba(201,168,76,.35);background:var(--ink)}
+.excl-grid img{width:100%;height:auto;object-fit:cover;object-position:50% 20%;display:block;transition:opacity .4s ease}
+.excl-grid figure:hover img{opacity:.88}
+@media (max-width:640px){.excl-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory}.excl-grid figure{scroll-snap-align:center}.excl-grid figure.mid{margin-top:0}}
+.mood{padding-block:64px;background:var(--bordeaux)}
+.mood-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1320px;margin-inline:auto}
+.tile{position:relative;aspect-ratio:4/5;max-width:100%;overflow:hidden;display:flex;text-decoration:none}
+.tile img{display:block;object-fit:cover}
+.t-cream{background:var(--cream);color:var(--bordeaux-dark)}
+.t-bord{background:var(--bordeaux-dark);color:var(--gold-light);border:1px solid rgba(201,168,76,.4)}
+.t-photo img{position:absolute;inset:0;width:100%;height:100%;object-position:50% 25%;transition:transform .8s ease}
+a.t-photo:hover img{transform:scale(1.03)}
+.t-photo .tag{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-family:var(--display);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--white);text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.t-name{flex-direction:column;justify-content:center;align-items:center;gap:10px;text-align:center}
+.t-name .big{font-family:var(--display);font-weight:700;font-size:clamp(34px,7vw,92px);line-height:.95;letter-spacing:.12em;padding-left:.12em;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 6px rgba(107,0,0,.25))}
+.t-name small{font-family:var(--body);font-size:clamp(9px,1vw,11px);letter-spacing:.2em;text-transform:uppercase;color:var(--bordeaux)}
+.t-logo{background:#952F3D;align-items:center;justify-content:center}
+.t-logo img{width:100%;height:auto;aspect-ratio:1/1}
+.t-vert{align-items:center;gap:4%;padding:5%}
+.t-vert .vert{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--script);font-style:italic;font-size:clamp(22px,3.4vw,40px);line-height:1;white-space:nowrap}
+.t-vert img{flex:1;min-width:0;height:94%;object-position:50% 30%}
+.t-side{flex-direction:column;padding:6% 0 0 5%}
+.t-side p{margin:0 8% 0 0;font-family:var(--script);font-style:italic;font-size:clamp(14px,1.6vw,19px);line-height:1.3;text-align:right}
+.t-side img{flex:1;min-height:0;width:92%;align-self:flex-start;margin-top:4%;object-position:50% 20%}
+.t-white{background:#fff}
+.t-white img{object-fit:contain;object-position:50% 50%}
+.tile-btn{position:absolute;left:50%;bottom:6%;transform:translateX(-50%);z-index:1;white-space:nowrap;font-family:var(--body);font-size:clamp(9px,1vw,11px);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--white);background:var(--bordeaux);border:1px solid var(--gold);padding:.9em 1.8em}
+a.tile:hover .tile-btn{background:var(--gold);color:var(--ink)}
+.t-tex .over{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:600;font-size:clamp(20px,3.4vw,38px);letter-spacing:.14em;color:var(--cream);background:rgba(58,0,0,.35);text-align:center}
+.t-text{flex-direction:column;justify-content:space-between;padding:10%}
+.t-text p{margin:0;font-size:clamp(12px,1.25vw,14px);line-height:1.6;color:var(--ink)}
+.mark{font-family:var(--display);font-weight:600;letter-spacing:.16em;font-size:clamp(15px,2vw,22px)}
+.t-text .mark{align-self:flex-end;color:var(--bordeaux)}
+.t-new{flex-direction:column;align-items:flex-end;padding:5% 0 0 0}
+.t-new .head{align-self:center;margin:0 0 4% 18%;font-family:var(--script);font-size:clamp(22px,3vw,36px);line-height:1.05}
+.t-new img{flex:1;min-height:0;width:92%;object-position:50% 20%}
+.t-manif{flex-direction:column;justify-content:flex-end;gap:12px;padding:10%}
+.t-manif .mark{color:var(--gold-light)}
+.t-manif p{margin:0;font-family:var(--script);font-style:italic;font-size:clamp(14px,1.6vw,19px);line-height:1.35;color:var(--cream)}
+.t-manif .more{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+a.t-manif:hover .more{text-decoration:underline;text-underline-offset:3px}
+a.tile:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+@media (max-width:640px){.mood-grid{gap:8px}.t-text p{font-size:11px}}
+/* Sections haute couture */
+.eyebrow{margin:0;font-family:var(--body);font-size:11px;letter-spacing:.32em;text-transform:uppercase}
+.link{display:inline-block;font-family:var(--body);font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;color:inherit;padding-bottom:6px;border-bottom:1px solid currentColor;transition:opacity .3s}
+.link:hover{opacity:.65}
+.desc{margin:0;max-width:38ch;font-family:var(--script);font-style:italic;font-size:clamp(19px,1.8vw,23px);line-height:1.45}
+.unique{background:#FFFFFF;color:var(--bordeaux-dark)}
+.unique-in{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start;max-width:1320px;margin-inline:auto;padding-block:clamp(20px,2.4vw,36px) 0}
+.unique-img{display:block;align-self:end}
+.unique-txt{padding-top:clamp(8px,2vw,28px);padding-bottom:clamp(40px,5vw,72px)}
+.unique-img{text-align:center}
+.unique-img img{display:block;width:100%;max-width:640px;height:auto;margin-inline:auto;transition:transform 1.2s ease}
+/* Effets veste : rideau sur la photo, texte qui arrive en cascade, trait doré au survol */
+.unique-img{overflow:hidden}
+.unique-txt>*{transition:opacity 800ms cubic-bezier(.23,1,.32,1),transform 800ms cubic-bezier(.23,1,.32,1)}
+.unique.wait .unique-txt>*,.unique.wait .u-list li{opacity:0;transform:translateY(18px)}
+.unique-txt>*:nth-child(1){transition-delay:200ms}.unique-txt>*:nth-child(2){transition-delay:300ms}.unique-txt>*:nth-child(3){transition-delay:400ms}.unique-txt>*:nth-child(4){transition-delay:500ms}.unique-txt>*:nth-child(5){transition-delay:600ms}.unique-txt>*:nth-child(6){transition-delay:950ms}.unique-txt>*:nth-child(7){transition-delay:1050ms}
+.u-list li{transition:opacity 600ms cubic-bezier(.23,1,.32,1),transform 600ms cubic-bezier(.23,1,.32,1)}
+.u-list li:nth-child(1){transition-delay:650ms}.u-list li:nth-child(2){transition-delay:720ms}.u-list li:nth-child(3){transition-delay:790ms}.u-list li:nth-child(4){transition-delay:860ms}
+.unique-txt .link{position:relative;border-bottom-color:rgba(139,0,0,.3)}
+.unique-txt .link::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 350ms cubic-bezier(.23,1,.32,1)}
+.unique-txt .link:hover{opacity:1}
+@media (hover:hover) and (pointer:fine){.unique-txt .link:hover::after{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.unique-img img,.unique-txt>*,.u-list li,.unique-txt .link::after{transition:none}.unique.wait .unique-txt>*,.unique.wait .u-list li{opacity:1;transform:none}}
+.unique-img:hover img{opacity:.92}
+.unique-txt{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.unique-txt .eyebrow{color:var(--bordeaux);font-size:13px}
+.unique-txt .desc{font-size:clamp(22px,2.2vw,28px)}
+.u-body{font-size:17px;color:var(--bordeaux-dark)}
+.u-list{margin:0;padding:16px 0;list-style:none;display:grid;gap:10px;width:100%;max-width:52ch;border-block:1px solid rgba(139,0,0,.2);font-size:16px;color:var(--bordeaux-dark)}
+.u-list li::before{content:"✦";color:var(--gold);margin-right:10px}
+.unique-txt h2,.story-txt h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(34px,4.4vw,64px);line-height:1.1;text-wrap:balance}
+.price{margin:0;font-family:var(--display);font-size:clamp(22px,2vw,28px);letter-spacing:.08em}
+.cats{background:var(--bordeaux);padding-block:clamp(64px,8vw,120px)}
+.cats-t{margin:0 0 clamp(32px,4vw,56px);text-align:center;font-family:var(--display);font-weight:600;font-size:clamp(13px,1.2vw,15px);letter-spacing:.42em;padding-left:.42em;text-transform:uppercase;color:var(--gold-light)}
+.cats-grid{position:relative;display:flex;gap:clamp(14px,2vw,28px);max-width:1320px;margin-inline:auto;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.cats-grid .cat{flex:0 0 calc((100% - 2 * clamp(14px,2vw,28px)) / 3.25);scroll-snap-align:start;min-width:0}
+.cats-nav{display:flex;justify-content:flex-end;gap:10px;max-width:1320px;margin:0 auto 18px}
+.cats-arrow{width:44px;height:44px;border:1px solid var(--gold);background:transparent;color:var(--gold-light);font-size:18px;cursor:pointer}
+.cats-arrow:hover{background:var(--gold);color:var(--ink)}
+.cats-arrow:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+.cat-soon{aspect-ratio:2/3;display:flex!important;align-items:center;justify-content:center;border:1px dashed rgba(201,168,76,.6)}
+.cat-soon span{font-family:var(--script);font-style:italic;font-size:22px;color:var(--gold-light)}
+.cat{display:flex;flex-direction:column;align-items:center;gap:14px;text-decoration:none;color:var(--white)}
+.cat-img{display:block;width:100%;overflow:hidden;background:var(--bordeaux-dark)}
+.cat-img img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:50% 20%;transition:transform 1.2s ease}
+.cat-img video{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:50% 20%}
+.cat:hover .cat-img img{transform:scale(1.04)}
+.cat-name{margin-top:8px;font-family:var(--display);font-weight:600;font-size:clamp(20px,2vw,26px);letter-spacing:.24em;padding-left:.24em;text-transform:uppercase}
+.cat .link{color:var(--gold-light)}
+.story{background:#FFFFFF;color:var(--bordeaux)}
+.story-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(28px,4vw,64px);align-items:stretch;max-width:1480px;margin-inline:auto;padding-block:clamp(64px,9vw,130px)}
+.story-txt{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.story-txt .eyebrow{color:var(--bordeaux)}
+.story-txt .desc{color:var(--bordeaux)}
+.body-txt{margin:0;max-width:52ch;font-family:var(--body);font-size:15px;line-height:1.75;color:var(--bordeaux-dark)}
+.symbols{list-style:none;margin:6px 0;padding:18px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;width:100%;max-width:52ch;border-block:1px solid rgba(139,0,0,.25)}
+.symbols li{display:flex;flex-direction:column;gap:4px}
+.symbols strong{font-family:var(--display);font-weight:600;font-size:16px;color:var(--bordeaux)}
+.symbols span{font-size:13px;line-height:1.4;color:var(--bordeaux-dark)}
+@media (max-width:480px){.symbols{grid-template-columns:minmax(0,1fr)}}
+.story-img{position:relative;min-height:100%}
+.story-img img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:100% 50%;box-shadow:0 18px 40px rgba(107,0,0,.18)}
+@media (max-width:760px){.story-img{aspect-ratio:1/1;min-height:0}}
+/* Photo rouge : reflet doré qui passe comme sur un fil de soie, et cadre doré qui se dessine */
+.story-img{overflow:hidden}
+.story-img::after{content:"";position:absolute;inset:-20% -60%;z-index:1;pointer-events:none;background:linear-gradient(105deg,transparent 42%,rgba(255,226,150,.0) 44%,rgba(255,226,150,.38) 50%,rgba(255,226,150,0) 56%,transparent 58%);mix-blend-mode:screen;transform:translateX(-60%);animation:reflet 7s cubic-bezier(.45,0,.2,1) 1.2s infinite}
+@keyframes reflet{0%{transform:translateX(-60%)}35%,100%{transform:translateX(60%)}}
+.story-img::before{content:"";position:absolute;inset:14px;z-index:2;pointer-events:none;border:1px solid rgba(212,175,55,.85);clip-path:inset(0 100% 100% 0);animation:cadre 1.6s cubic-bezier(.23,1,.32,1) .4s forwards}
+@keyframes cadre{to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:reduce){.story-img::after{animation:none;display:none}.story-img::before{animation:none;clip-path:none}}
+@media (max-width:760px){.unique-in,.story-in{grid-template-columns:minmax(0,1fr)}.story-img{order:-1}.cats-grid .cat{flex-basis:78%}}
+.foot{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.35)}
+.foot-in{max-width:1240px;margin-inline:auto;padding-block:56px 40px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.foot-tag{margin:0;font-family:var(--script);font-style:italic;font-size:20px;color:var(--cream)}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 30px}
+.social a{font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;color:var(--gold-light);padding-bottom:5px;border-bottom:1px solid rgba(212,175,55,.5)}
+.social a:hover{color:var(--white);border-color:var(--white)}
+.foot-legal{margin:10px 0 0;font-size:12px;opacity:.7}
+.foot-legal a{color:inherit}
+.cats-mode{display:flex;justify-content:center;gap:6px;margin:-20px auto 28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.cats-mode button{font:inherit;color:var(--cream);background:transparent;border:1px solid rgba(201,168,76,.5);padding:6px 14px;cursor:pointer}
+.cats-mode button[aria-pressed="true"]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+/* Mosaïque : grille éditoriale, nom posé sur l'image */
+.cats.mosaic .cats-nav{display:none}
+.cats.mosaic .cats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,19vw,280px);grid-auto-flow:dense;gap:12px;overflow:visible;padding-bottom:0}
+.cats.mosaic .cats-grid .cat{position:relative;display:block;overflow:hidden;flex:none}
+.cats.mosaic .cat-img{position:absolute;inset:0;height:100%}
+.cats.mosaic .cat-img img,.cats.mosaic .cat-img video{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.cats.mosaic .cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(43,0,0,.8));pointer-events:none}
+.cats.mosaic .cat-name{position:absolute;left:0;right:0;bottom:16px;z-index:1;margin:0;text-align:center;font-size:clamp(14px,1.5vw,20px)}
+.cats.mosaic .cat .link{display:none}
+.cats.mosaic .cat:nth-child(1){grid-column:span 2;grid-row:span 2}
+.cats.mosaic .cat:nth-child(3),.cats.mosaic .cat:nth-child(n+5){grid-row:span 2}
+@media (max-width:640px){.cats.mosaic .cats-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:44vw}}
+/* Collection : grille 3 x 3 */
+.cats.grid9 .cats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1440px;overflow:visible;padding-bottom:0}
+.cats.grid9 .cats-grid .cat{position:relative;display:block;overflow:hidden;flex:none;aspect-ratio:3/4}
+.cats.grid9 .cat-img{position:absolute;inset:0;height:100%}
+.cats.grid9 .cat-img img,.cats.grid9 .cat-img video{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.cats.grid9 a.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(43,0,0,.8));pointer-events:none}
+.cats.grid9 .cat-name{position:absolute;left:0;right:0;bottom:clamp(64px,6vw,84px);z-index:1;margin:0;text-align:center;font-size:clamp(15px,1.8vw,24px)}
+.cats.grid9 .cat .link{position:absolute;left:50%;bottom:clamp(18px,2vw,28px);transform:translateX(-50%);z-index:1;white-space:nowrap;padding:.9em 2em;border:1px solid var(--gold-light);color:var(--white);background:rgba(43,0,0,.35);backdrop-filter:blur(3px);font-size:clamp(9px,.9vw,11px);transition:background .3s,color .3s}
+.cats.grid9 a.cat:hover .link{background:var(--gold);color:var(--ink);opacity:1}
+.cats.grid9 a.cat::after{background:linear-gradient(180deg,transparent 50%,rgba(43,0,0,.85))}
+.cats.grid9 .cat-soon{display:flex!important;align-items:center;justify-content:center;aspect-ratio:auto}
+@media (max-width:640px){.cats.grid9 .cats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+.capsule{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
+.capsule .cats-t{margin-bottom:10px}
+.caps-sub{margin:0 0 clamp(28px,3vw,44px);text-align:center;font-family:var(--script);font-style:italic;font-size:clamp(18px,1.8vw,22px);color:var(--cream)}
+.capsule .cats-grid{max-width:1100px}
+@media (max-width:640px){.capsule .cats-grid{grid-template-columns:minmax(0,1fr)}}
+.tagline{max-width:640px;margin:44px auto 0;text-align:center;font-family:var(--script);font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.4;color:var(--cream);text-wrap:balance}
+.capsule-band{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
+.capsule-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(28px,5vw,80px);max-width:1180px;margin-inline:auto;padding-block:clamp(48px,6vw,90px)}
+.capsule-img{display:block;overflow:hidden;aspect-ratio:4/5;max-width:100%;border:1px solid rgba(201,168,76,.35)}
+.capsule-img img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;transition:transform 1.2s cubic-bezier(.23,1,.32,1)}
+@media (hover:hover) and (pointer:fine){.capsule-img:hover img{transform:scale(1.04)}}
+.capsule-txt{display:flex;flex-direction:column;align-items:flex-start;gap:18px;min-width:0}
+.capsule-txt .eyebrow{color:var(--gold)}
+.capsule-txt h2{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(32px,4vw,56px);line-height:1.1;color:var(--white)}
+.capsule-txt .desc{color:var(--cream)}
+.capsule-txt .link{color:var(--gold-light)}
+@media (max-width:760px){.capsule-in{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.capsule-img img{transition:none}}
+/* Menu déroulant Collection */
+.nav{position:relative;z-index:20}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--white);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"]{color:var(--gold)}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-btn:hover{color:var(--gold)}
+.dd-btn:focus-visible,.dd-menu a:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms cubic-bezier(.23,1,.32,1)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+@media (prefers-reduced-motion:reduce){.dd-menu{animation:none}.dd-btn span,.dd-menu ul a{transition:none}}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Collection plus grande */
+.cats.grid9 .cats-grid{max-width:1600px;gap:18px}
+.cats.grid9 .cats-grid .cat{aspect-ratio:2/3}
+.cats.grid9 .cat-name{font-size:clamp(20px,2.4vw,32px)!important}
+@media (max-width:640px){.cats.grid9 .cats-grid{grid-template-columns:minmax(0,1fr)!important}}
+.note{background:var(--ink);font-size:12px;opacity:.85}
+.note .in{padding-block:14px}
+
+@media (prefers-reduced-motion:reduce){.track,.panels{animation:none}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
 <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-       <div class="logo" style="display:flex; align-items:center; gap:10px;"><img src="logo-slave-hafta-vetements-femme-brodes.png" alt="Logo SLAVE HAFTA, vêtements femme brodés artisanaux" style="height:45px; width:45px; border-radius:50%; object-fit:cover;">SLAVE HAFTA</div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
-        <div class="nav-links" id="navLinks">
-            <a href="collection.html">COLLECTION</a>
-            <a href="#histoire">NOTRE HISTOIRE</a>
-            <a href="journal-fils-de-memoire.html">JOURNAL</a>
-            <a href="#contact">CONTACT</a>
-            <a href="panier.html" class="cart-icon">
-                <span>🛒</span>
-                <span class="cart-count" id="cartCount">0</span>
-            </a>
-        </div>
-    </nav>
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="#"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="links"><a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button><div class="dd-menu" id="dd-menu" hidden><div class="dd-col"><p class="dd-t">La collection</p><ul><li><a href="robes.html">Robes</a></li><li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html">Accessoires</a></li></ul></div><div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul><li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li></ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div></div></div><a href="histoire.html">NOTRE HISTOIRE</a><a href="contact.html">CONTACT</a><button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button></div>
+</div></nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="accueil">
-        <div class="hero-video-wrap">
-            <video src="Full-body_fashion_editorial_video__6_202607311408.mp4" autoplay muted loop playsinline controls style="background:#333;"></video>
-            <div class="hero-video-overlay">
-                <h1 class="hero-title"><span class="line1">SLAVE</span><span class="line2">HAFTA</span></h1>
-            </div>
-        </div>
-        <div class="hero-cta-row">
-            <p class="hero-description">Pièces brodées artisanales inspirées du folklore polonais ancestral — réinterprétées pour la femme moderne qui ose.</p>
-            <a href="collection.html" class="btn-primary">DÉCOUVRIR LA COLLECTION<span>→</span></a>
-        </div>
-        <div class="hero-images">
-            <div class="hero-image-frame">
-                <video src="video-hero-1.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
-                <div class="frame-text">SLAVE HAFTA</div>
-                <a href="tailleur.html" class="frame-cta">Découvrez notre tailleur →</a>
-            </div>
-            <div class="hero-image-frame">
-                <video src="video-hero-2.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
-                <div class="frame-text">SLAVE HAFTA</div>
-                <a href="robes.html" class="frame-cta">Découvrez nos robes →</a>
-            </div>
-            <div class="hero-image-frame">
-                <video src="tunique-brodee-femme-slave-hafta.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:contain; background:rgba(0,0,0,0.15);"></video>
-                <div class="frame-text">SLAVE HAFTA</div>
-                <a href="tuniques.html" class="frame-cta">Découvrez nos tuniques brodées →</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- NOUVELLE PIECE SECTION -->
-    <section class="nouvelle-piece" id="collection">
-        <h2 class="section-title">Nouvelle Pièce</h2>
-        <div class="products-row">
-            <div class="product-card">
-                <img src="PLANOGRAMME/veste-brodee-col-montant-femme-slave-hafta.jpg" alt="Veste brodée col montant, vêtement femme artisanal broderie slave" class="lightbox-img">
-                <div class="product-info">
-                    <h3 class="product-name">Veste Brodée Col Montant</h3>
-                    <p class="product-price">380 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Veste Brodée Col Montant" data-price="380 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="PLANOGRAMME/robe-dos-nu-camel-brodee-femme-slave-hafta.jpg" alt="Robe dos nu camel brodée, vêtement femme broderie slave édition limitée" class="lightbox-img">
-                <div class="product-info">
-                    <h3 class="product-name">Robe Dos Nu Camel Brodée</h3>
-                    <p class="product-price">420 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Robe Dos Nu Camel Brodée" data-price="420 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="PLANOGRAMME/robe-brodee-beige-femme-slave-hafta.jpg" alt="Robe brodée beige, vêtement femme artisanal folklore polonais" class="lightbox-img">
-                <div class="product-info">
-                    <h3 class="product-name">Robe Brodée Beige</h3>
-                    <p class="product-price">350 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Robe Brodée Beige" data-price="350 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COLLECTION SECTION -->
-    <section class="collection" id="attente">
-        <h2 class="section-title">Collection</h2>
-        <div class="collection-grid">
-            <div class="product-card">
-                <img src="PLANOGRAMME/manteau-long-noir-brode-femme-slave-hafta.jpg" alt="Manteau long noir brodé femme, édition limitée broderie slave" class="lightbox-img">
-                <span class="product-badge badge-edition">ÉDITION LIMITÉE</span>
-                <div class="product-info">
-                    <h3 class="product-name">Manteau Long Noir Brodé</h3>
-                    <p class="product-price">480 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Manteau Long Noir Brodé" data-price="480 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="PLANOGRAMME/robe-evasee-noire-brodee-femme-slave-hafta.jpg" alt="Robe évasée noire brodée, vêtement femme broderie slave" class="lightbox-img">
-                <span class="product-badge badge-coup">COUP DE CŒUR</span>
-                <div class="product-info">
-                    <h3 class="product-name">Robe Évasée Noire Brodée</h3>
-                    <p class="product-price">390 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Robe Évasée Noire Brodée" data-price="390 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="PLANOGRAMME/ensemble-tailleur-noir-brode-femme-slave-hafta.jpg" alt="Ensemble tailleur noir brodé femme, précommande broderie slave" class="lightbox-img">
-                <span class="product-badge badge-precommande">PRÉCOMMANDE</span>
-                <div class="product-info">
-                    <h3 class="product-name">Ensemble Tailleur Noir Brodé</h3>
-                    <p class="product-price">450 €</p>
-                    <a href="#" class="btn-small add-to-cart" data-name="Ensemble Tailleur Noir Brodé" data-price="450 €">PRÉCOMMANDER</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NOTRE HISTOIRE SECTION -->
-    <section class="notre-histoire" id="histoire">
-        <div class="histoire-image">
-            <img src="PLANOGRAMME/notre-histoire-broderie-slave-slave-hafta.jpg" alt="Broderie slave artisanale à la main, histoire de la marque SLAVE HAFTA">
-        </div>
-        <div class="histoire-content">
-            <span class="section-label">Notre Histoire</span>
-            <h2 class="histoire-title">
-                <span class="white">L'âme slave,</span><br>
-                <span class="gold">taillée dans l'ombre</span>
-            </h2>
-            <div class="histoire-divider"></div>
-            <p class="histoire-text">
-                SLAVE HAFTA est née d'une passion pour le folklore slave et l'esthétique dark feminine. Chaque pièce est brodée à la main, inspirée des traditions polonaises ancestrales, réinterprétée pour la femme moderne qui ose.
-            </p>
-            <p class="histoire-text">
-                Nos broderies portent des symboles slaves millénaires. Chaque pièce est unique, produite en édition limitée, pensée pour durer.
-            </p>
-            <div class="histoire-stats">
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Brodé à la main</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">Limité</span>
-                    <span class="stat-label">Édition</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">PL</span>
-                    <span class="stat-label">Folklore Polonais</span>
-                </div>
-            </div>
-            <a href="journal-fils-de-memoire.html" class="btn-link">
-                LIRE LE JOURNAL →
-            </a>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-        <h2 class="contact-title">Contactez-nous</h2>
-        <p class="contact-text">Rejoignez-nous pour être informé des nouvelles pièces et lire notre journal.</p>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message (optionnel)"></textarea>
-            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-                ENVOYER
-                <span>→</span>
-            </button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-logo">SLAVE HAFTA</div>
-        <p class="footer-email"><a href="mailto:gochakicia80@gmail.com" style="color: var(--gold);">gochakicia80@gmail.com</a></p>
-        <p class="footer-links">
-            <a href="mentions-legales.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">MENTIONS LÉGALES</a>
-            &nbsp;|&nbsp;
-            <a href="politique-confidentialite.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">CONFIDENTIALITÉ</a>
-            &nbsp;|&nbsp;
-            <a href="conditions-generales.html" style="color: var(--gold); font-size: 11px; letter-spacing: 1px;">CGV</a>
-        </p>
-        <p class="footer-text">© 2024 Slave Hafta. Tous droits réservés.</p>
-    </footer>
-
-    <!-- FLOATING HELP BUTTON -->
-    <div class="help-btn">?</div>
-
-    <!-- LIGHTBOX -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="lightboxClose">&times;</span>
-        <img src="" alt="Image agrandie" id="lightboxImg">
+<section class="reel" id="collection" aria-labelledby="reel-t">
+  <h1 class="sr">SLAVE HAFTA, vêtements femme brodés inspirés de la broderie slave</h1>
+  <div class="belt">
+    <div class="panels" id="panels">
+      <a class="panel" href="#"><video src="prague.mp4" poster="prague.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="place"><strong>Prague</strong><em>Tchéquie</em></span></a>
+      <a class="panel" href="#"><video src="tailleur.mp4" poster="tailleur.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="place"><strong>Paris</strong><em>France</em></span></a>
+      <a class="panel" href="#"><video src="robes.mp4" poster="robes.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="place"><strong>Rome</strong><em>Italie</em></span></a>
+      <a class="panel" href="#"><video src="tuniques.mp4" poster="tuniques.jpg" muted loop playsinline autoplay preload="metadata"></video><span class="place"><strong>Cracovie</strong><em>Pologne</em></span></a>
     </div>
+    <div class="name"><span aria-hidden="true">SLAVE HAFTA</span><em>Broderie slave à travers le monde</em></div>
+  </div>
+  <div class="cta gutter"><a class="btn" href="collection.html">Découvrir la collection</a></div>
+  <p class="tagline gutter">Pièces brodées artisanales inspirées du folklore slave ancestral, réinterprétées pour la femme moderne qui ose.</p>
+</section>
 
-    <script>
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        document.getElementById('cartCount').textContent = cart.length;
 
-        document.querySelectorAll('.add-to-cart').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const name = this.getAttribute('data-name');
-                const price = this.getAttribute('data-price');
-                cart.push({ name, price });
-                localStorage.setItem('cart', JSON.stringify(cart));
-                document.getElementById('cartCount').textContent = cart.length;
-                alert(name + ' a été ajouté au panier !');
-            });
-        });
+<section class="unique" aria-labelledby="unique-t">
+  <div class="unique-in gutter">
+    <a class="unique-img" href="tailleurs.html" target="_blank" rel="noopener"><img src="u-veste-v2.webp" alt="Veste crème à col montant entièrement brodée de motifs floraux rouges" width="575" height="1014" loading="eager" fetchpriority="high" decoding="async"></a>
+    <div class="unique-txt">
+      <p class="eyebrow">Édition limitée · N° 01</p>
+      <h2 id="unique-t">Veste brodée col montant</h2>
+      <p class="desc">Entièrement brodée de fleurs rouges inspirées des broderies d'Europe de l'Est. Brodée en petite série, en édition limitée.</p>
+      <p class="body-txt u-body">Son col montant et sa coupe courte et ajustée lui donnent une allure à la fois classique et moderne. Les motifs couvrent le buste et les manches, comme sur les vestes de fête des villages slaves. Elle se porte avec un pantalon large crème.</p>
+      <ul class="u-list">
+        <li>Édition limitée, petite série</li>
+        <li>Broderie florale rouge, verte et or</li>
+        <li>Col montant, coupe courte ajustée</li>
+        <li>Brodée à la main et à la machine</li>
+      </ul>
+      <p class="price">380 €</p>
+      <a class="link" href="tailleurs.html" target="_blank" rel="noopener">Précommander</a>
+    </div>
+  </div>
+</section>
 
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const lightboxClose = document.getElementById('lightboxClose');
+<section class="cats grid9" id="cats" aria-labelledby="cats-t">
+  <div class="gutter">
+    <h2 class="cats-t" id="cats-t">La collection</h2>
+    <div class="cats-grid" id="cats-grid">
+      <a class="cat" href="robes.html"><span class="cat-img"><img src="c-robes.webp" alt="Robe crème à fines bretelles brodée d'un motif floral rouge, gilet en maille ouvert" loading="lazy"></span><span class="cat-name">Robes</span><span class="link">Découvrir</span></a>
+      <a class="cat" href="tailleurs.html"><span class="cat-img"><video src="c-tailleurs.mp4" poster="c-tailleurs-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Femme en tailleur noir brodé marchant de nuit en ville"></video></span><span class="cat-name">Tailleurs</span><span class="link">Découvrir</span></a>
+      <a class="cat" href="tuniques.html"><span class="cat-img"><img src="cr-tu-ivoire.webp" alt="Tunique ivoire ample, encolure et manches brodées de motifs rouges" loading="lazy"></span><span class="cat-name">Tuniques</span><span class="link">Découvrir</span></a>
+    </div>
+  </div>
+</section>
 
-        document.querySelectorAll('.lightbox-img').forEach(img => {
-            img.addEventListener('click', function() {
-                lightboxImg.src = this.src;
-                lightbox.classList.add('active');
-            });
-        });
+<section class="story" id="histoire" aria-labelledby="story-t">
+  <div class="story-in gutter">
+    <div class="story-txt">
+      <p class="eyebrow">Notre histoire</p>
+      <h2 id="story-t">Broder, c'était raconter d'où l'on venait</h2>
+      <p class="desc">Dans les villages de Pologne, d'Ukraine, de Slovaquie ou des Balkans, les femmes brodaient des symboles transmis de mère en fille.</p>
+      <p class="body-txt">Le soir, à la lueur d'une lampe, elles brodaient des croix, des roses, des oiseaux et des arbres de vie. Chaque motif avait un sens : la protection, la fertilité, l'appartenance à un village ou à une famille. On ne les écrivait jamais. La mémoire passait par les mains.</p>
+      <ul class="symbols">
+        <li><strong>La rose</strong><span>l'amour et la féminité</span></li>
+        <li><strong>L'arbre de vie</strong><span>la famille et la transmission</span></li>
+        <li><strong>La croix</strong><span>la protection</span></li>
+      </ul>
+      <p class="body-txt">Ces broderies se faisaient sur du lin, une fibre naturelle tissée à la main et choisie pour durer. SLAVE HAFTA reprend ce geste sur des coupes d'aujourd'hui, brodées à la main et à la machine en petite série.</p>
+      <p class="desc">De Cracovie à Paris, de Rome à Prague, nos pièces font voyager cette mémoire jusqu'aux rues d'aujourd'hui.</p>
+      <a class="link" href="histoire.html">Lire notre histoire</a>
+    </div>
+    <div class="story-img"><img src="h-histoire-red.webp" alt="Femme en tailleur blanc brodé de fleurs rouges sur fond rouge, avec le nom SLAVE HAFTA en or" width="1080" height="1080" loading="lazy"></div>
+  </div>
+</section>
 
-        lightboxClose.addEventListener('click', function() {
-            lightbox.classList.remove('active');
-        });
+<section class="capsule-band" aria-labelledby="caps-t">
+  <div class="capsule-in gutter">
+    <a class="capsule-img" href="collection.html" target="_blank" rel="noopener"><img src="c-czapka.webp" alt="Czapka blanche en fourrure à rabats, tricotée de motifs slaves rouges" loading="lazy"></a>
+    <div class="capsule-txt">
+      <p class="eyebrow">Édition limitée</p>
+      <h2 id="caps-t">Collection capsule</h2>
+      <p class="desc">L'esprit slave au quotidien : czapka, t-shirts et ensembles sport, en petite série.</p>
+      <a class="link" href="collection.html" target="_blank" rel="noopener">Découvrir la capsule</a>
+    </div>
+  </div>
+</section>
 
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-            }
-        });
+<footer class="foot gutter">
+  <div class="foot-in">
+    <a class="brand" href="#"><img src="logo-rond.webp" alt="" width="46" height="46"><span>SLAVE HAFTA</span></a>
+    <p class="foot-tag">Broderie slave à travers le monde</p>
+    <nav class="social" aria-label="Réseaux sociaux">
+      <a href="https://www.instagram.com/slvav.e80" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.pinterest.com/slave80" target="_blank" rel="noopener">Pinterest</a>
+      <a href="https://www.tiktok.com/@slave.hafta" target="_blank" rel="noopener">TikTok</a>
+    </nav>
+    <p class="foot-legal">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="mentions-legales.html">Mentions légales</a></p>
+  </div>
+</footer>
 
-        function handleSubmit(e) {
-            e.preventDefault();
-            alert('Merci ! Votre inscription a été envoyée.');
-        }
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+<script>
+(function(){
+  // Bande : on duplique les 4 panneaux une fois pour un défilement continu sur grand écran
+  var p=document.getElementById('panels'), base=[].slice.call(p.children);
+  for(var k=0;k<1;k++){base.forEach(function(n){var c=n.cloneNode(true);c.setAttribute('aria-hidden','true');c.tabIndex=-1;p.appendChild(c)});}
+  p.querySelectorAll('video').forEach(function(v){v.muted=true;var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})});
+  // Vidéos : lecture seulement quand elles sont visibles (page plus légère)
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}else v.pause();});},{rootMargin:'200px'});
+    document.querySelectorAll('video').forEach(function(v){if(v.closest('#panels'))return;v.muted=true;v.removeAttribute('autoplay');io.observe(v);});
+  }
+  // Hero : les vidéos du bandeau tournent toujours, et on relance celles qui se bloquent
+  var hv=[].slice.call(document.querySelectorAll('#panels video'));
+  hv.forEach(function(v){v.muted=true;v.loop=true;v.preload='auto';v.setAttribute('autoplay','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){})});v.addEventListener('stalled',function(){v.load();v.play().catch(function(){})});});
+  function relance(){if(document.hidden)return;hv.forEach(function(v){if(v.paused||v.readyState<2){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}})}
+  relance();setInterval(relance,1500);
+})();
+</script>
+<script>
+(function(){
+  // Veste : les effets se lancent quand la section arrive à l'écran
+  var s=document.querySelector('.unique');
+  if(!s||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  if(s.getBoundingClientRect().top<window.innerHeight*0.85)return;
+  s.classList.add('wait');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){s.classList.remove('wait');io.disconnect();}});},{threshold:0,rootMargin:'0px 0px 15% 0px'});
+  io.observe(s);
+})();
+</script>
 
-        // MENU MOBILE - ouvrir/fermer au clic
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        menuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('open');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('open');
-            });
-        });
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ClothingStore",
-      "name": "SLAVE HAFTA",
-      "url": "https://20301050.github.io/SLAVE-HAFTA/",
-      "description": "Marque de vêtements femme brodés à la main, inspirés du folklore slave et de la broderie polonaise ancestrale.",
-      "image": "https://20301050.github.io/SLAVE-HAFTA/logo-slave-hafta-vetements-femme-brodes.png",
-      "email": "gochakicia80@gmail.com",
-      "sameAs": [
-        "https://www.instagram.com/slvav.e80",
-        "https://www.pinterest.com/slave80",
-        "https://www.tiktok.com/@slave.hafta"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "Product",
-          "position": 1,
-          "name": "Veste Brodée Col Montant",
-          "image": "https://20301050.github.io/SLAVE-HAFTA/PLANOGRAMME/veste-brodee-col-montant-femme-slave-hafta.jpg",
-          "description": "Veste brodée col montant, vêtement femme artisanal broderie slave",
-          "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "380", "availability": "https://schema.org/PreOrder" }
-        },
-        {
-          "@type": "Product",
-          "position": 2,
-          "name": "Robe Dos Nu Camel Brodée",
-          "image": "https://20301050.github.io/SLAVE-HAFTA/PLANOGRAMME/robe-dos-nu-camel-brodee-femme-slave-hafta.jpg",
-          "description": "Robe dos nu camel brodée, vêtement femme broderie slave édition limitée",
-          "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "420", "availability": "https://schema.org/PreOrder" }
-        },
-        {
-          "@type": "Product",
-          "position": 3,
-          "name": "Robe Brodée Beige",
-          "image": "https://20301050.github.io/SLAVE-HAFTA/PLANOGRAMME/robe-brodee-beige-femme-slave-hafta.jpg",
-          "description": "Robe brodée beige, vêtement femme artisanal folklore polonais",
-          "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "350", "availability": "https://schema.org/PreOrder" }
-        }
-      ]
-    }
-    </script>
+<script>
+(function(){
+  var dd=document.getElementById('dd'),b=dd.querySelector('.dd-btn'),m=document.getElementById('dd-menu'),t;
+  function open(){clearTimeout(t);m.hidden=false;b.setAttribute('aria-expanded','true')}
+  function close(){m.hidden=true;b.setAttribute('aria-expanded','false')}
+  b.addEventListener('click',function(){m.hidden?open():close()});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',function(){t=setTimeout(close,180)})}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){close();b.focus()}});
+  document.addEventListener('click',function(e){if(!dd.contains(e.target))close()});
+})();
+</script>
+<script src="panier.js"></script>
+<script src="menu.js"></script>
+</body></html>
 </body>
 </html>

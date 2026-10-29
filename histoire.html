@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KBSCJ3QW9');
+</script>
+<link rel="icon" href="logo-rond.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Notre histoire · SLAVE HAFTA</title>
+<meta name="description" content="L'histoire de SLAVE HAFTA : la broderie slave d'Europe de l'Est, ses symboles et une créatrice polonaise qui la fait voyager.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap">
+<style>
+
+/* Page catégorie : même charte que l'accueil. Grille de 4 pièces, choix de la taille, précommande vers le panier. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --gold:#C9A84C; --gold-light:#D4AF37; --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* Barre du haut */
+.nav{position:relative;z-index:20;background:var(--bordeaux);border-bottom:1px solid rgba(201,168,76,.25)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px;max-width:1440px;margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.right{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.right{gap:10px}}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover,.links a[aria-current]{color:var(--gold)}
+@media (max-width:760px){.links{display:none}}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--gold);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms var(--ease)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover,.dd-menu ul a[aria-current]{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+
+.dd-btn{color:var(--white)}
+/* Page Notre histoire : récit long, colonne de lecture centrée, photos alternées à gauche et à droite */
+.hero{position:relative;overflow:hidden;background:var(--ink)}
+.hero img{width:100%;height:clamp(280px,38vw,460px);object-fit:cover;object-position:50% 40%;display:block;opacity:.72}
+.hero-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:linear-gradient(180deg,rgba(42,0,0,.15),rgba(42,0,0,.65))}
+.eyebrow{margin:0;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-light)}
+.hero h1{margin:0;max-width:16ch;font-family:var(--display);font-weight:600;font-size:clamp(34px,5.6vw,72px);line-height:1.1;text-wrap:balance;color:var(--white);text-shadow:0 2px 20px rgba(0,0,0,.4);animation:up 900ms var(--ease) both}
+.hero .sub{margin:0;max-width:40ch;font-family:var(--script);font-style:italic;font-size:clamp(19px,2.2vw,26px);color:var(--cream);animation:up 900ms var(--ease) 200ms both}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.read{background:var(--cream);color:var(--bordeaux-dark)}
+.col{max-width:68ch;margin-inline:auto;padding-block:clamp(32px,4vw,56px)}
+.col.intro{max-width:1080px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+.col.intro .intro-2 h2{margin-top:0}
+@media (max-width:760px){.col.intro{grid-template-columns:minmax(0,1fr)}}
+.lead{margin:0;font-family:var(--script);font-size:clamp(21px,2.2vw,26px);line-height:1.5;color:var(--bordeaux)}
+.lead::first-letter{float:left;font-family:var(--display);font-weight:700;font-size:4.2em;line-height:.85;padding:6px 10px 0 0;color:var(--bordeaux)}
+.read h2{margin:28px 0 12px;font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.2;color:var(--bordeaux);text-wrap:balance}
+.read p{margin:0 0 16px;font-size:17px;line-height:1.8}
+.pair{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(24px,4vw,56px);align-items:center;max-width:1080px;margin-inline:auto;padding-block:clamp(28px,4vw,48px)}
+.pair.rev .ph{order:2}
+.ph{margin:0}
+.ph img{width:100%;max-width:380px;max-height:520px;object-fit:cover;object-position:50% 30%;height:auto;display:block;margin-inline:auto;border:1px solid rgba(201,168,76,.4)}
+.ph figcaption{text-align:center}
+.ph figcaption{margin-top:10px;font-family:var(--script);font-style:italic;font-size:17px;color:var(--bordeaux)}
+.pair .tx{min-width:0}
+.pair .tx h2{margin-top:0}
+/* Bande rouge pleine largeur pour le costume */
+.pair.red{background:var(--bordeaux);box-shadow:0 0 0 100vmax var(--bordeaux);clip-path:inset(0 -100vmax);color:var(--cream);padding-block:clamp(48px,6vw,80px)}
+.pair.red p{color:var(--cream)}
+.pair.red .ph figcaption{color:var(--gold-light)}
+.pair.red .ph img{border-color:rgba(212,175,55,.7)}
+.pair.red .stars{color:var(--gold-light)}
+@media (max-width:760px){.pair{grid-template-columns:minmax(0,1fr)}.pair.rev .ph{order:0}}
+.stars{text-align:center;color:var(--gold);letter-spacing:.8em;padding-left:.8em;margin:8px 0}
+.quote{background:var(--bordeaux);color:var(--white)}
+.quote .in{max-width:1080px;margin-inline:auto;padding-block:clamp(40px,6vw,80px);display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1.4fr);gap:clamp(24px,5vw,72px);align-items:center}
+.quote img{width:100%;max-width:300px;max-height:420px;object-fit:cover;height:auto;display:block;margin-inline:auto;border:1px solid rgba(201,168,76,.45)}
+.quote blockquote{margin:0;font-family:var(--script);font-style:italic;font-size:clamp(30px,4vw,54px);line-height:1.25;color:var(--gold-light);text-wrap:balance}
+@media (max-width:760px){.quote .in{grid-template-columns:minmax(0,1fr)}}
+.end{background:var(--bordeaux-dark)}
+.end .in{max-width:1080px;margin-inline:auto;padding-block:clamp(40px,6vw,80px);display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,72px);align-items:center}
+.end-txt{display:flex;flex-direction:column;align-items:flex-start;gap:18px;min-width:0}
+@media (max-width:760px){.end .in{grid-template-columns:minmax(0,1fr);text-align:center}.end-txt{align-items:center}}
+.end img{width:min(340px,100%);margin-inline:auto;height:auto;display:block;border:1px solid rgba(201,168,76,.45)}
+.end .name{font-family:var(--display);font-weight:700;font-size:clamp(34px,5vw,60px);letter-spacing:.14em;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.end p{margin:0;max-width:46ch;font-family:var(--script);font-style:italic;font-size:21px;color:var(--cream)}
+.btn{display:inline-block;padding:14px 30px;font:700 12px var(--body);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--white);border:1px solid var(--gold);transition:background-color .2s ease,color .2s ease}
+.btn:hover{background:var(--gold);color:var(--ink)}
+/* Effets modernes : barre de lecture, frise, bandeau citation, apparitions */
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;z-index:50;pointer-events:none}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left}
+.frise{background:var(--bordeaux);color:var(--cream)}
+.frise-in{max-width:1080px;margin-inline:auto;padding-block:clamp(44px,6vw,80px);text-align:center}
+.frise h2{margin:8px 0 clamp(28px,4vw,48px);font-family:var(--display);font-weight:600;font-size:clamp(28px,3.4vw,42px);color:var(--white)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,40px);position:relative}
+.steps::before{content:"";position:absolute;top:9px;left:16.66%;right:16.66%;height:1px;background:var(--gold);transform:scaleX(var(--p,1));transform-origin:left;transition:transform 1.4s cubic-bezier(.23,1,.32,1)}
+.steps li{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+.dot{width:19px;height:19px;border-radius:50%;background:var(--bordeaux);border:1px solid var(--gold-light);box-shadow:inset 0 0 0 4px var(--bordeaux),inset 0 0 0 10px var(--gold);margin-bottom:10px;position:relative;z-index:1}
+.steps em{font-style:normal;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.steps strong{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,24px);color:var(--white)}
+.steps li>span:last-child{font-size:14px;line-height:1.55;max-width:28ch;color:rgba(245,240,232,.82)}
+.steps li{transition:opacity .7s cubic-bezier(.23,1,.32,1),transform .7s cubic-bezier(.23,1,.32,1)}
+.steps li:nth-child(2){transition-delay:.25s}.steps li:nth-child(3){transition-delay:.5s}
+.frise.wait .steps li{opacity:0;transform:translateY(14px)}
+.frise.wait .steps{--p:0}
+@media (max-width:700px){.steps{grid-template-columns:minmax(0,1fr)}.steps::before{display:none}}
+.marquee{overflow:hidden;background:var(--bordeaux-dark);border-block:1px solid rgba(201,168,76,.4);padding-block:clamp(14px,2vw,22px)}
+.mq-track{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mq-track span{white-space:nowrap;padding-right:.6em;font-family:var(--script);font-style:italic;font-weight:600;font-size:clamp(34px,5.4vw,72px);line-height:1.15;background:linear-gradient(180deg,var(--gold-light),var(--gold) 60%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mq-track i{font-style:normal;font-size:.5em;vertical-align:middle;padding-left:.4em}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rv{transition:opacity .6s cubic-bezier(.23,1,.32,1),transform .6s cubic-bezier(.23,1,.32,1)}
+.rv.wait{opacity:0;transform:translateY(24px)}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}.rv,.steps li,.steps::before{transition:none}.rv.wait,.frise.wait .steps li{opacity:1;transform:none}.frise.wait .steps{--p:1}}
+/* La créatrice */
+.founder{background:var(--cream);color:var(--bordeaux-dark)}
+.founder .eyebrow{color:var(--bordeaux)}
+.founder p{margin:0 0 14px;font-size:17px;line-height:1.75}
+.founder h2{margin:6px 0 16px;font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.2;color:var(--bordeaux);text-wrap:balance}
+.photo-slot{width:100%;max-width:380px;aspect-ratio:3/4;margin-inline:auto;display:grid;place-items:center;border:1px dashed var(--gold);background:rgba(139,0,0,.05)}
+.photo-slot span{font-family:var(--script);font-style:italic;font-size:22px;color:var(--bordeaux)}
+.founder figcaption{text-align:center;margin-top:10px;font-family:var(--script);font-style:italic;font-size:17px;color:var(--bordeaux)}
+.sign{font-family:var(--script);font-style:italic;font-size:34px!important;color:var(--gold)!important;margin-top:6px!important}
+.q-txt{display:flex;flex-direction:column;gap:14px;min-width:0}
+.q-txt blockquote{font-size:clamp(26px,3vw,40px)!important;margin-bottom:6px!important}
+.q-txt h2{margin:6px 0 0;font-family:var(--display);font-weight:600;font-size:clamp(24px,2.6vw,34px);line-height:1.2;color:var(--white);text-wrap:balance}
+.q-txt p{margin:0;font-size:16px;line-height:1.75;color:rgba(245,240,232,.88)}
+.quote .in{align-items:center}
+.foot{background:var(--ink);border-top:1px solid rgba(201,168,76,.35);text-align:center;padding-block:28px;font-size:12px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.hero h1,.hero .sub{animation:none}.dd-menu{animation:none}.btn{transition:none}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="prog"></span></div>
+
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="index.html"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="right">
+    <div class="links">
+      <a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button>
+        <div class="dd-menu" id="dd-menu" hidden>
+          <div class="dd-col"><p class="dd-t">La collection</p><ul>
+            <li><a href="robes.html">Robes</a></li>
+            <li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html">Accessoires</a></li>
+          </ul></div>
+          <div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul>
+            <li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li>
+          </ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div>
+        </div>
+      </div>
+      <a href="histoire.html" aria-current="page">NOTRE HISTOIRE</a><a href="contact.html">CONTACT</a>
+    </div>
+    <button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <img src="hist-tissage.webp" alt="Jeune femme tissant du lin sur un métier à tisser traditionnel" width="736" height="580">
+  <div class="hero-txt">
+    <p class="eyebrow">Notre histoire</p>
+    <h1>Fils de mémoire : l'histoire de la broderie slave</h1>
+    <p class="sub">Un héritage brodé, entre village slave et femme d'aujourd'hui</p>
+  </div>
+</header>
+
+<main>
+<section class="read">
+  <div class="col intro gutter">
+    <p class="lead">Bien avant de devenir un motif de mode, la broderie slave était un langage. Dans les campagnes de Pologne, mais aussi de Russie, d'Ukraine, de Biélorussie et des Balkans, les femmes brodaient depuis des siècles des symboles transmis de mère en fille — des croix, des roses, des oiseaux, des arbres de vie — chacun porteur d'un sens : protection, fertilité, appartenance à un village, à une famille.</p>
+    <div class="intro-2"><h2>Un savoir-faire né à la campagne</h2>
+    <p>Ce n'était pas un art réservé à une élite. C'était un geste du quotidien, pratiqué le soir à la lueur d'une lampe, entre deux travaux des champs. Les femmes âgées transmettaient les points et les motifs aux plus jeunes, souvent sans jamais les écrire — la mémoire passait par les mains, par la répétition, par les vêtements portés lors des fêtes et des mariages.</p></div>
+  </div>
+
+  <div class="pair red gutter">
+    <figure class="ph rv"><img src="hist-robe-champ.webp" alt="Femme en robe longue blanche brodée de roses rouges, couronne de fleurs, dans un champ de blé" width="560" height="586" loading="lazy"><figcaption>La broderie portée, symbole d'identité et de fête</figcaption></figure>
+    <div class="tx">
+      <p>Chaque région avait ses couleurs et ses symboles propres : le rouge et le noir dominaient en Pologne comme en Ukraine, tandis que d'autres régions d'Europe de l'Est privilégiaient des palettes plus dorées ou plus sombres. Mais partout, le principe restait le même : broder, c'était raconter d'où l'on venait.</p>
+      <p class="stars" aria-hidden="true">✦ ✦ ✦</p>
+    </div>
+  </div>
+
+  <div class="pair rev gutter">
+    <figure class="ph rv"><img src="hist-point-croix.webp" alt="Gros plan sur des mains brodant un point de croix rouge et noir sur du lin" width="736" height="1318" loading="lazy"><figcaption>Point après point, sur un lin brut choisi pour durer</figcaption></figure>
+    <div class="tx">
+      <h2>Le lin, une matière qui a traversé les siècles</h2>
+      <p>Le tissu de prédilection de cette tradition était le lin — une fibre naturelle, cultivée localement, robuste et respirante. Bien avant que le mot « bio » n'existe, ces femmes travaillaient déjà une matière durable, tissée à la main, puis brodée avec des fils de coton ou de laine teints avec des pigments naturels.</p>
+      <p>C'est cette même exigence de matière noble et responsable que nous voulons faire vivre aujourd'hui : un lin choisi avec soin, pensé pour durer, et habillé de broderies qui rendent hommage à ce geste ancestral.</p>
+    </div>
+  </div>
+</section>
+
+<section class="frise" aria-labelledby="frise-t">
+  <div class="frise-in gutter">
+    <p class="eyebrow">Autrefois ➜ aujourd'hui</p>
+    <h2 id="frise-t">Le chemin d'un motif</h2>
+    <ol class="steps" id="steps">
+      <li><span class="dot" aria-hidden="true"></span><em>Autrefois</em><strong>Le village</strong><span>Les femmes brodent le soir, à la main, des motifs transmis de mère en fille.</span></li>
+      <li><span class="dot" aria-hidden="true"></span><em>La matière</em><strong>Le lin</strong><span>Une fibre naturelle tissée à la main, choisie pour durer.</span></li>
+      <li><span class="dot" aria-hidden="true"></span><em>Aujourd'hui</em><strong>Paris, Rome, Prague</strong><span>SLAVE HAFTA fait voyager ces motifs sur des coupes modernes.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="in gutter">
+    <img class="rv" src="hist-fil-laine.webp" alt="Mains tenant un fil de laine près d'une manche brodée" width="736" height="1308" loading="lazy">
+    <div class="q-txt"><blockquote>« Broder, c'était raconter d'où l'on venait. »</blockquote>
+      <h2>Une broderie qui traverse le monde, aujourd'hui</h2>
+      <p>Ce savoir-faire ne s'arrête plus aux frontières d'un village, ni à celles d'un pays. Aujourd'hui, SLAVE HAFTA porte cette broderie slave sur des pièces pensées pour être vécues partout dans le monde — à Paris, à Rome, ou ailleurs — sans jamais trahir son origine.</p>
+    <p>Chaque point, brodé à la main ou à la machine, continue de raconter la même histoire, mais avec une élégance nouvelle : des coupes contemporaines, des matières nobles choisies pour durer, et un geste artisanal qui refuse la vitesse de la mode jetable. Porter une pièce SLAVE HAFTA, c'est faire voyager cette mémoire brodée, d'un village slave d'autrefois jusqu'aux rues d'aujourd'hui.</p></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq-track"><span>Broder, c'était raconter d'où l'on venait <i>✦</i></span><span>Broder, c'était raconter d'où l'on venait <i>✦</i></span><span>Broder, c'était raconter d'où l'on venait <i>✦</i></span><span>Broder, c'était raconter d'où l'on venait <i>✦</i></span></div></div>
+
+<section class="founder" aria-labelledby="founder-t">
+  <div class="pair gutter">
+    <figure class="ph rv"><img src="gocha-creatrice.webp" alt="Malgorzata, créatrice de SLAVE HAFTA, en veste rouge" width="600" height="800" loading="lazy"><figcaption>Malgorzata, créatrice de SLAVE HAFTA</figcaption></figure>
+    <div class="tx">
+      <p class="eyebrow">La créatrice</p>
+      <h2 id="founder-t">Une créatrice polonaise, un héritage slave</h2>
+      <p>Je m'appelle Malgorzata, je suis polonaise. J'ai créé SLAVE HAFTA pour rendre hommage à mes origines.</p>
+      <p>Mais la broderie slave ne s'arrête pas aux frontières de la Pologne : on la retrouve en Ukraine, en Slovaquie, en Tchéquie, en Biélorussie et jusque dans les Balkans. C'est tout cet héritage d'Europe de l'Est que je veux faire voyager.</p>
+      <p>Formée au stylisme et au modélisme, je réinterprète ces motifs sur des coupes d'aujourd'hui, brodées à la main et à la machine, pour la femme moderne qui ose.</p>
+      <p class="sign">Malgorzata</p>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="in gutter">
+    <img class="rv" src="hist-moodboard.webp" alt="Moodboard élégance slave : pièces modernes brodées et motifs traditionnels" width="768" height="1376" loading="lazy">
+    <div class="end-txt"><span class="name">SLAVE HAFTA</span>
+    <p>Pièces brodées artisanales inspirées du folklore slave ancestral — réinterprétées pour la femme moderne qui ose.</p>
+    <a class="btn" href="robes.html">Découvrir la collection</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot gutter">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="mentions-legales.html">Mentions légales</a> · <a href="conditions-generales.html">CGV</a></footer>
+
+<script src="panier.js"></script>
+<script src="menu.js"></script>
+<script>
+(function(){
+  // Barre de lecture dorée
+  var bar=document.getElementById('prog'),tick=false;
+  function prog(){var h=document.documentElement,max=h.scrollHeight-innerHeight;bar.style.transform='scaleX('+(max>0?Math.min(1,scrollY/max):0)+')';tick=false}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(prog)}},{passive:true});prog();
+  // Apparitions au scroll (seulement ce qui est sous l'écran au chargement)
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=[].slice.call(document.querySelectorAll('.rv,.frise'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('wait');io.unobserve(e.target)}})},{rootMargin:'0px 0px 10% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('wait');io.observe(el)}});
+  }
+  // Menu Collection
+  var dd=document.getElementById('dd'),db=dd.querySelector('.dd-btn'),m=document.getElementById('dd-menu'),tm;
+  function open(){clearTimeout(tm);m.hidden=false;db.setAttribute('aria-expanded','true')}
+  function close(){m.hidden=true;db.setAttribute('aria-expanded','false')}
+  db.addEventListener('click',function(){m.hidden?open():close()});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',function(){tm=setTimeout(close,180)})}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){close();db.focus()}});
+  document.addEventListener('click',function(e){if(!dd.contains(e.target))close()});
+})();
+</script>
+</body>
+</html>

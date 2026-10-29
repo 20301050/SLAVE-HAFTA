@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KBSCJ3QW9');
+</script>
+<link rel="icon" href="logo-rond.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contact · SLAVE HAFTA</title>
+<meta name="description" content="Contactez SLAVE HAFTA : questions sur une pièce, une taille ou une précommande. E-mail, Instagram, TikTok, Pinterest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap">
+<style>
+/* Page catégorie : même charte que l'accueil. Grille de 4 pièces, choix de la taille, précommande vers le panier. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --gold:#C9A84C; --gold-light:#D4AF37; --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* Barre du haut */
+.nav{position:relative;z-index:20;background:var(--bordeaux);border-bottom:1px solid rgba(201,168,76,.25)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px;max-width:1440px;margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.right{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.right{gap:10px}}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover,.links a[aria-current]{color:var(--gold)}
+@media (max-width:760px){.links{display:none}}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--white);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms var(--ease)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover,.dd-menu ul a[aria-current]{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+
+/* Page contact : grand logo à gauche, coordonnées et formulaire à droite, sur crème */
+.contact{background:var(--cream);color:var(--bordeaux-dark)}
+.c-in{max-width:1180px;margin-inline:auto;padding-block:clamp(40px,6vw,88px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+@media (max-width:820px){.c-in{grid-template-columns:minmax(0,1fr)}}
+.c-logo{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.c-logo img{width:min(520px,100%);height:auto;border:1px solid rgba(201,168,76,.5);box-shadow:0 24px 60px rgba(107,0,0,.22);animation:logoIn 1s var(--ease) both}
+@keyframes logoIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.c-name{font-family:var(--display);font-weight:700;font-size:clamp(34px,4.6vw,58px);letter-spacing:.16em;padding-left:.16em;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.c-tag{margin:0;font-family:var(--script);font-style:italic;font-size:22px;color:var(--bordeaux)}
+.c-info{display:flex;flex-direction:column;gap:22px;min-width:0}
+.c-info .eyebrow{margin:0;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--bordeaux)}
+.c-info h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(32px,4vw,50px);line-height:1.1;color:var(--bordeaux)}
+.c-info>p{margin:0;font-size:16px;line-height:1.7}
+.coords{list-style:none;margin:0;padding:18px 0;display:grid;gap:14px;border-block:1px solid rgba(139,0,0,.2)}
+.coords li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;align-items:baseline}
+.coords span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--bordeaux)}
+.coords a,.coords b{font-family:var(--display);font-weight:600;font-size:18px;color:var(--bordeaux-dark);text-decoration:none;overflow-wrap:anywhere}
+.coords a:hover{color:var(--bordeaux)}
+form{display:grid;gap:12px}
+label.f{display:grid;gap:6px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--bordeaux)}
+input,textarea{font:16px var(--body);color:var(--bordeaux-dark);background:#fff;border:1px solid rgba(139,0,0,.25);padding:12px 14px;min-height:46px}
+textarea{min-height:120px;resize:vertical}
+input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.send{min-height:48px;background:var(--bordeaux);color:#fff;border:0;font:700 12px var(--body);letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:background-color .2s ease,transform .12s ease}
+.send:hover{background:var(--bordeaux-dark)}.send:active{transform:scale(.98)}
+.ok{margin:0;min-height:1.2em;font-family:var(--script);font-style:italic;font-size:19px;color:var(--bordeaux)}
+.foot{background:var(--ink);border-top:1px solid rgba(201,168,76,.35);text-align:center;padding-block:28px;font-size:12px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.c-logo img{animation:none}.dd-menu{animation:none}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="index.html"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="right">
+    <div class="links">
+      <a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button>
+        <div class="dd-menu" id="dd-menu" hidden>
+          <div class="dd-col"><p class="dd-t">La collection</p><ul>
+            <li><a href="robes.html">Robes</a></li>
+            <li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html">Accessoires</a></li>
+          </ul></div>
+          <div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul>
+            <li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li>
+          </ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div>
+        </div>
+      </div>
+      <a href="histoire.html">NOTRE HISTOIRE</a><a href="contact.html" aria-current="page">CONTACT</a>
+    </div>
+    <button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button>
+  </div>
+</div></nav>
+
+<main class="contact gutter">
+  <div class="c-in">
+    <div class="c-logo">
+      <img src="contact-vitrine.webp" alt="Vitrine SLAVE HAFTA à Paris : grand monogramme SH doré sur velours rouge, femme en robe blanche brodée qui passe devant" width="912" height="1180">
+      <p class="c-tag">Broderie slave à travers le monde</p>
+    </div>
+    <div class="c-info">
+      <p class="eyebrow">Contact</p>
+      <h1>Écrivez-nous</h1>
+      <p>Une question sur une pièce, une taille ou une précommande ? Nous vous répondons avec plaisir.</p>
+      <ul class="coords">
+        <li><span>E-mail</span><b>gochakicia80@gmail.com</b></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/slvav.e80" target="_blank" rel="noopener">@slvav.e80</a></li>
+        <li><span>TikTok</span><a href="https://www.tiktok.com/@slave.hafta" target="_blank" rel="noopener">@slave.hafta</a></li>
+        <li><span>Pinterest</span><a href="https://www.pinterest.com/slave80" target="_blank" rel="noopener">@slave80</a></li>
+        <li><span>Site</span><a href="" target="_blank" rel="noopener">20301050.github.io/SLAVE-HAFTA</a></li>
+      </ul>
+      <form id="c-form" novalidate>
+        <label class="f">Votre nom<input id="c-nom" type="text" autocomplete="name" required></label>
+        <label class="f">Votre e-mail<input id="c-mail" type="email" autocomplete="email" placeholder="prenom@exemple.fr" required></label>
+        <label class="f">Votre message<textarea id="c-msg" required></textarea></label>
+        <button class="send" type="submit">Envoyer</button>
+        <p class="ok" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="foot gutter">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="mentions-legales.html">Mentions légales</a> · <a href="conditions-generales.html">CGV</a></footer>
+<script src="panier.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

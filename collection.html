@@ -1,574 +1,541 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection Vêtements Femme Brodés – Robes, Vestes & Ensembles | SLAVE HAFTA</title>
-    <meta name="description" content="Découvrez la collection SLAVE HAFTA : robes, vestes et ensembles pour femme brodés main, inspirés de la broderie slave et du folklore d'Europe de l'Est. Édition limitée.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://20301050.github.io/SLAVE-HAFTA/collection.html">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KBSCJ3QW9');
+</script>
+<link rel="icon" href="logo-rond.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Toute la collection · SLAVE HAFTA</title>
+<meta name="description" content="Toute la collection SLAVE HAFTA : 31 pièces brodées pour femme, robes, tailleurs, vestes, jupes et accessoires en précommande.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap">
+<style>
+/* Page catégorie : même charte que l'accueil. Grille de 4 pièces, choix de la taille, précommande vers le panier. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --gold:#C9A84C; --gold-light:#D4AF37; --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Collection Vêtements Femme Brodés – Robes, Vestes & Ensembles | SLAVE HAFTA">
-    <meta property="og:description" content="Robes, vestes et ensembles pour femme brodés main, inspirés de la broderie slave et du folklore d'Europe de l'Est.">
-    <meta property="og:url" content="https://20301050.github.io/SLAVE-HAFTA/collection.html">
-    <meta property="og:site_name" content="SLAVE HAFTA">
-    <meta property="og:image" content="https://20301050.github.io/SLAVE-HAFTA/pha/ensemble-brode-bordeaux-femme-slave-hafta.jpg">
-    <meta property="og:locale" content="fr_FR">
+/* Barre du haut */
+.nav{position:relative;z-index:20;background:var(--bordeaux);border-bottom:1px solid rgba(201,168,76,.25)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px;max-width:1440px;margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.right{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.right{gap:10px}}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover,.links a[aria-current]{color:var(--gold)}
+@media (max-width:760px){.links{display:none}}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--gold);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms var(--ease)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover,.dd-menu ul a[aria-current]{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Collection Vêtements Femme Brodés – Robes, Vestes & Ensembles | SLAVE HAFTA">
-    <meta name="twitter:description" content="Robes, vestes et ensembles pour femme brodés main, inspirés de la broderie slave et du folklore d'Europe de l'Est.">
-    <meta name="twitter:image" content="https://20301050.github.io/SLAVE-HAFTA/pha/ensemble-brode-bordeaux-femme-slave-hafta.jpg">
+/* En-tête de catégorie */
+.head{max-width:1440px;margin-inline:auto;padding-block:clamp(28px,4vw,56px) clamp(24px,3vw,40px);display:grid;gap:12px;text-align:center;justify-items:center}
+.crumbs{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.head h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(44px,7vw,92px);line-height:1;letter-spacing:.14em;padding-left:.14em;text-transform:uppercase;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.head p{margin:0;max-width:44ch;font-family:var(--script);font-style:italic;font-size:clamp(19px,2vw,24px);color:var(--cream)}
+.meta{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light)}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Grille produits */
+.grid{max-width:1440px;margin-inline:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,26px);padding-bottom:clamp(56px,7vw,100px)}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{display:flex;flex-direction:column;gap:12px;min-width:0;animation:cardIn 800ms var(--ease) both}
+.card:nth-child(1){animation-delay:80ms}.card:nth-child(2){animation-delay:180ms}.card:nth-child(3){animation-delay:280ms}.card:nth-child(4){animation-delay:380ms}
+@keyframes cardIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.photo{position:relative;overflow:hidden;aspect-ratio:2/3;max-width:100%;background:var(--ink);border:1px solid rgba(201,168,76,.3)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){.card:hover .photo img{transform:scale(1.05)}}
+.badge{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--gold-light);border:1px solid var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:5px 10px}
+.line{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.card h2{margin:0;font-family:var(--display);font-weight:600;font-size:20px;line-height:1.25}
+.price{font-family:var(--display);font-size:19px;color:var(--gold-light);white-space:nowrap;font-variant-numeric:tabular-nums}
+.desc{margin:0;font-size:14px;line-height:1.55;color:rgba(245,240,232,.85)}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:6px;padding:0}
+.size{position:relative}
+.size input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.size span{display:grid;place-items:center;min-width:44px;height:44px;padding:0 8px;border:1px solid rgba(245,240,232,.35);font-size:12px;letter-spacing:.08em;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.size input:checked+span{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.size input:focus-visible+span{outline:2px solid var(--gold-light);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.size:hover span{border-color:var(--gold)}}
+.btn{min-height:48px;margin-top:auto;font:700 12px var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--white);background:transparent;border:1px solid var(--gold);cursor:pointer;transition:background-color .2s ease,color .2s ease,transform .12s ease}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn:active{transform:scale(.97)}
+.err{margin:0;min-height:1.2em;font-size:13px;color:var(--gold-light)}
 
-        :root {
-            --bordeaux-deep: #8B0000;
-            --bordeaux-dark: #6B0000;
-            --bordeaux-darker: #5a0000;
-            --white: #FFFFFF;
-            --gold: #C9A84C;
-            --gold-light: #D4AF37;
-            --cream: #F5F0E8;
-            --gray-dark: #333333;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #7a0000;
-            color: var(--white);
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: var(--bordeaux-darker);
-            padding: 20px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: 6px;
-            color: var(--white);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 40px;
-        }
-
-        .nav-links a {
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--white);
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-
-        .cart-icon {
-            position: relative;
-            cursor: pointer;
-        }
-
-        .cart-icon span:first-child {
-            font-size: 20px;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -10px;
-            background: var(--gold);
-            color: var(--bordeaux-deep);
-            font-size: 11px;
-            font-weight: 700;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .nav-links a.active {
-            color: var(--gold);
-            text-decoration: underline;
-            text-underline-offset: 5px;
-        }
-
-        .back-link {
-            margin-top: 120px;
-            padding: 0 60px 40px;
-            text-align: center;
-        }
-
-        .back-link a {
-            font-family: 'Lato', sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--gold);
-            transition: color 0.3s ease;
-        }
-
-        .back-link a:hover {
-            color: var(--gold-light);
-        }
-
-        .page-title {
-            text-align: center;
-            padding: 0 60px 60px;
-        }
-
-        .page-title h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(40px, 6vw, 72px);
-            font-weight: 700;
-            letter-spacing: 8px;
-            color: var(--white);
-            margin-bottom: 15px;
-        }
-
-        .page-title .subtitle {
-            font-family: 'Lato', sans-serif;
-            font-size: 14px;
-            letter-spacing: 3px;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .page-title .divider {
-            width: 80px;
-            height: 1px;
-            background: var(--gold);
-            margin: 0 auto;
-        }
-
-        .collection-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 0 60px 100px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .product-card {
-            background: var(--bordeaux-dark);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            object-position: top;
-            display: block;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .product-card img:hover {
-            opacity: 0.9;
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            font-family: 'Lato', sans-serif;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 6px 12px;
-        }
-
-        .badge-edition {
-            background: #cc0000;
-            color: var(--white);
-        }
-
-        .badge-coup {
-            background: var(--bordeaux-deep);
-            border: 1px solid var(--gold);
-            color: var(--gold);
-        }
-
-        .badge-precommande {
-            background: var(--gray-dark);
-            color: var(--white);
-        }
-
-        .badge-nouveau {
-            background: var(--gold);
-            color: var(--bordeaux-deep);
-        }
-
-        .product-info {
-            padding: 20px;
-        }
-
-        .product-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 8px;
-        }
-
-        .product-desc {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-
-        .product-price {
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-
-        .btn-primary {
-            display: block;
-            width: 100%;
-            padding: 14px;
-            background: var(--white);
-            color: var(--bordeaux-deep);
-            font-family: 'Lato', sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background: var(--cream);
-        }
-
-        .footer {
-            padding: 40px 60px;
-            background: var(--bordeaux-darker);
-            text-align: center;
-            border-top: 1px solid rgba(201, 168, 76, 0.2);
-        }
-
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            color: var(--white);
-            margin-bottom: 15px;
-        }
-
-        .footer-text {
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        @media (max-width: 1024px) {
-            .collection-grid {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 0 30px 80px;
-            }
-
-            .navbar {
-                padding: 15px 30px;
-            }
-
-            .nav-links {
-                gap: 20px;
-            }
-
-            .back-link {
-                padding: 100px 30px 30px;
-            }
-
-            .page-title {
-                padding: 0 30px 40px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .collection-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .product-card img {
-                height: 350px;
-            }
-        }
-
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox.active {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            color: var(--white);
-            cursor: pointer;
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-        }
-
-        .lightbox-close:hover {
-            color: var(--gold);
-        }
-    </style>
+.filters{max-width:1440px;margin:0 auto clamp(20px,3vw,32px);display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chip{min-height:40px;padding:0 16px;border:1px solid rgba(201,168,76,.6);background:transparent;color:var(--cream);font:700 11px var(--body);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.chip:hover{border-color:var(--gold-light)}
+.chip[aria-pressed="true"]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.cat-tag{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light);margin-bottom:-6px}
+.card[hidden]{display:none!important}
+/* Bande d'infos */
+.infos{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
+.infos ul{list-style:none;margin:0 auto;max-width:1180px;padding-block:36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:center}
+@media (max-width:700px){.infos ul{grid-template-columns:minmax(0,1fr)}}
+.infos strong{display:block;font-family:var(--display);font-weight:600;font-size:18px;color:var(--gold-light)}
+.infos span{font-size:13px;color:rgba(245,240,232,.8)}
+.back{display:flex;justify-content:center;padding-block:28px;background:var(--bordeaux-dark)}
+.back a{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--gold-light);border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+.foot{background:var(--ink);border-top:1px solid rgba(201,168,76,.35);text-align:center;padding-block:28px;font-size:12px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.card{animation:none}.photo img,.btn,.size span{transition:none}.dd-menu{animation:none}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">SLAVE HAFTA</div>
-        <div class="nav-links">
-            <a href="collection.html" class="active">COLLECTION</a>
-            <a href="index.html#histoire">NOTRE HISTOIRE</a>
-            <a href="index.html#attente">LISTE D'ATTENTE</a>
-            <a href="index.html#contact">CONTACT</a>
-            <a href="panier.html" class="cart-icon">
-                <span>🛒</span>
-                <span class="cart-count" id="cartCount">0</span>
-            </a>
-        </div>
-    </nav>
 
-    <div class="back-link">
-        <a href="index.html">← RETOUR À L'ACCUEIL</a>
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="index.html"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="right">
+    <div class="links">
+      <a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button>
+        <div class="dd-menu" id="dd-menu" hidden>
+          <div class="dd-col"><p class="dd-t">La collection</p><ul>
+            <li><a href="robes.html">Robes</a></li>
+            <li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html">Accessoires</a></li>
+          </ul></div>
+          <div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul>
+            <li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li>
+          </ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div>
+        </div>
+      </div>
+      <a href="histoire.html">NOTRE HISTOIRE</a><a href="contact.html">CONTACT</a>
     </div>
+    <button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button>
+  </div>
+</div></nav>
 
-    <div class="page-title">
-        <h1>LA COLLECTION</h1>
-        <p class="subtitle">PIÈCES BRODÉES ARTISANALES — ÉDITION LIMITÉE</p>
-        <div class="divider"></div>
-    </div>
+<header class="head gutter">
+  <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> · Toute la collection</nav>
+  <h1>La collection</h1>
+  <p>Toutes nos pièces brodées, inspirées des broderies slaves d'Europe de l'Est.</p>
+  <span class="meta" id="count">31 pièces · Précommande</span>
+</header>
 
-    <div class="collection-grid">
-        <div class="product-card">
-            <img src="pha/ensemble-brode-bordeaux-femme-slave-hafta.jpg" alt="Ensemble brodé bordeaux femme, veste et short broderie slave">
-            <span class="product-badge badge-edition">ÉDITION LIMITÉE</span>
-            <div class="product-info">
-                <h3 class="product-name">Ensemble Brodé Bordeaux</h3>
-                <p class="product-desc">Ensemble 2 pièces, veste brodée bordeaux et short brodé</p>
-                <p class="product-price">299 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Ensemble Brodé Bordeaux" data-price="299 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
+<main class="gutter">
+  <div class="filters" role="group" aria-label="Filtrer par catégorie"><button type="button" class="chip" aria-pressed="true" data-f="">Tout</button><button type="button" class="chip" aria-pressed="false" data-f="Robes">Robes</button><button type="button" class="chip" aria-pressed="false" data-f="Tailleurs">Tailleurs</button><button type="button" class="chip" aria-pressed="false" data-f="Tuniques">Tuniques</button><button type="button" class="chip" aria-pressed="false" data-f="Manteaux & vestes">Manteaux & vestes</button><button type="button" class="chip" aria-pressed="false" data-f="Jupes">Jupes</button><button type="button" class="chip" aria-pressed="false" data-f="Accessoires">Accessoires</button><button type="button" class="chip" aria-pressed="false" data-f="Czapka">Czapka</button><button type="button" class="chip" aria-pressed="false" data-f="T-shirts">T-shirts</button><button type="button" class="chip" aria-pressed="false" data-f="Sport">Sport</button></div>
+  <div class="grid">
+    <article class="card" data-cat="Robes" data-nom="Robe longue dos nu camel" data-prix="420" data-img="cr-robe-longue-camel.webp">
+      <div class="photo"><img src="cr-robe-longue-camel.webp" alt="Robe longue camel au dos nu, manches bouffantes brodées de fleurs rouges, vue de dos" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">Robes</span>
+      <div class="line"><h2>Robe longue dos nu camel</h2><span class="price">420 €</span></div>
+      <p class="desc">Satin camel, dos nu et manches bouffantes brodées de fleurs rouges. Pour les soirées.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c1" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c1" value="S"><span>S</span></label><label class="size"><input type="radio" name="c1" value="M"><span>M</span></label><label class="size"><input type="radio" name="c1" value="L"><span>L</span></label><label class="size"><input type="radio" name="c1" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Robes" data-nom="Robe chemise brodée beige" data-prix="350" data-img="cr-robe-chemise-beige.webp">
+      <div class="photo"><img src="cr-robe-chemise-beige.webp" alt="Robe chemise courte beige brodée de fleurs rouges, rubans rouges noués" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Robes</span>
+      <div class="line"><h2>Robe chemise brodée beige</h2><span class="price">350 €</span></div>
+      <p class="desc">Robe courte à col montant, broderies florales rouges et rubans noués sur le devant.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c2" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c2" value="S"><span>S</span></label><label class="size"><input type="radio" name="c2" value="M"><span>M</span></label><label class="size"><input type="radio" name="c2" value="L"><span>L</span></label><label class="size"><input type="radio" name="c2" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Robes" data-nom="Robe évasée noire" data-prix="340" data-img="cr-robe-evasee-noire.webp">
+      <div class="photo"><img src="cr-robe-evasee-noire.webp" alt="Robe courte évasée noire à manches longues, galons brodés crème au col, à la taille et aux poignets" width="600" height="900"></div>
+      <span class="cat-tag">Robes</span>
+      <div class="line"><h2>Robe évasée noire</h2><span class="price">340 €</span></div>
+      <p class="desc">Jupe évasée et galons brodés crème sur le col, la taille et les manches.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c3" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c3" value="S"><span>S</span></label><label class="size"><input type="radio" name="c3" value="M"><span>M</span></label><label class="size"><input type="radio" name="c3" value="L"><span>L</span></label><label class="size"><input type="radio" name="c3" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Robes" data-nom="Robe nuisette crème brodée" data-prix="290" data-img="cr-robe-nuisette-creme.webp">
+      <div class="photo"><img src="cr-robe-nuisette-creme.webp" alt="Robe crème à fines bretelles, cœur brodé de motifs rouges, portée avec un gilet en maille" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Robes</span>
+      <div class="line"><h2>Robe nuisette crème brodée</h2><span class="price">290 €</span></div>
+      <p class="desc">Fines bretelles et cœur brodé de motifs rouges. Se porte avec un gilet en maille.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c4" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c4" value="S"><span>S</span></label><label class="size"><input type="radio" name="c4" value="M"><span>M</span></label><label class="size"><input type="radio" name="c4" value="L"><span>L</span></label><label class="size"><input type="radio" name="c4" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tailleurs" data-nom="Tailleur blanc brodé de roses" data-prix="520" data-img="cr-tl-blanc-roses.webp">
+      <div class="photo"><img src="cr-tl-blanc-roses.webp" alt="Tailleur blanc, veste à col montant brodée de roses rouges et noires, pantalon large" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">Tailleurs</span>
+      <div class="line"><h2>Tailleur blanc brodé de roses</h2><span class="price">520 €</span></div>
+      <p class="desc">Veste ajustée brodée de roses rouges et noires sur le devant, pantalon large assorti.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c5" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c5" value="S"><span>S</span></label><label class="size"><input type="radio" name="c5" value="M"><span>M</span></label><label class="size"><input type="radio" name="c5" value="L"><span>L</span></label><label class="size"><input type="radio" name="c5" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tailleurs" data-nom="Tailleur noir à galons brodés" data-prix="480" data-img="cr-tl-noir-galons.webp">
+      <div class="photo"><img src="cr-tl-noir-galons.webp" alt="Tailleur noir oversize, galons brodés rouges à la taille et aux poignets, pantalon large" width="600" height="900"></div>
+      <span class="cat-tag">Tailleurs</span>
+      <div class="line"><h2>Tailleur noir à galons brodés</h2><span class="price">480 €</span></div>
+      <p class="desc">Veste oversize et pantalon large, galons brodés rouges à la taille et aux poignets.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c6" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c6" value="S"><span>S</span></label><label class="size"><input type="radio" name="c6" value="M"><span>M</span></label><label class="size"><input type="radio" name="c6" value="L"><span>L</span></label><label class="size"><input type="radio" name="c6" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tailleurs" data-nom="Tailleur crème motifs géométriques" data-prix="490" data-img="cr-tl-creme-geometrique.webp">
+      <div class="photo"><img src="cr-tl-creme-geometrique.webp" alt="Tailleur crème, revers, poches, poignets et jambe du pantalon brodés de motifs géométriques rouges" width="600" height="900"></div>
+      <span class="cat-tag">Tailleurs</span>
+      <div class="line"><h2>Tailleur crème motifs géométriques</h2><span class="price">490 €</span></div>
+      <p class="desc">Motifs géométriques rouges sur les revers, les poignets et le long de la jambe. Coupe droite.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c7" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c7" value="S"><span>S</span></label><label class="size"><input type="radio" name="c7" value="M"><span>M</span></label><label class="size"><input type="radio" name="c7" value="L"><span>L</span></label><label class="size"><input type="radio" name="c7" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tailleurs" data-nom="Ensemble col montant crème" data-prix="540" data-img="cr-tl-col-montant.webp">
+      <div class="photo"><img src="cr-tl-col-montant.webp" alt="Veste courte crème à col montant entièrement brodée de fleurs rouges, pantalon crème" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Tailleurs</span>
+      <div class="line"><h2>Ensemble col montant crème</h2><span class="price">540 €</span></div>
+      <p class="desc">Veste courte entièrement brodée de fleurs rouges et pantalon crème à pinces.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c8" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c8" value="S"><span>S</span></label><label class="size"><input type="radio" name="c8" value="M"><span>M</span></label><label class="size"><input type="radio" name="c8" value="L"><span>L</span></label><label class="size"><input type="radio" name="c8" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tailleurs" data-nom="Tailleur crème ceinture brodée" data-prix="510" data-img="cr-tl-creme-ceinture.webp">
+      <div class="photo"><img src="cr-tl-creme-ceinture.webp" alt="Tailleur crème, manches et jambes brodées de fleurs rouges, ceinture tissée rouge à pompon" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Tailleurs</span>
+      <div class="line"><h2>Tailleur crème ceinture brodée</h2><span class="price">510 €</span></div>
+      <p class="desc">Manches et jambes brodées de fleurs, ceinture tissée rouge nouée à pompons.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c9" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c9" value="S"><span>S</span></label><label class="size"><input type="radio" name="c9" value="M"><span>M</span></label><label class="size"><input type="radio" name="c9" value="L"><span>L</span></label><label class="size"><input type="radio" name="c9" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tuniques" data-nom="Tunique ivoire brodée" data-prix="190" data-img="cr-tu-ivoire.webp">
+      <div class="photo"><img src="cr-tu-ivoire.webp" alt="Tunique ivoire ample, encolure et manches brodées de motifs rouges" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Tuniques</span>
+      <div class="line"><h2>Tunique ivoire brodée</h2><span class="price">190 €</span></div>
+      <p class="desc">Tunique ample en coton ivoire, encolure brodée de motifs géométriques rouges.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c10" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c10" value="S"><span>S</span></label><label class="size"><input type="radio" name="c10" value="M"><span>M</span></label><label class="size"><input type="radio" name="c10" value="L"><span>L</span></label><label class="size"><input type="radio" name="c10" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tuniques" data-nom="Blouse ceinturée brodée" data-prix="175" data-img="cr-tu-blouse.webp">
+      <div class="photo"><img src="cr-tu-blouse.webp" alt="Blouse blanche ceinturée, manches bouffantes brodées de fleurs rouges, pantalon cargo beige" width="600" height="900"></div>
+      <span class="cat-tag">Tuniques</span>
+      <div class="line"><h2>Blouse ceinturée brodée</h2><span class="price">175 €</span></div>
+      <p class="desc">Manches bouffantes brodées de fleurs, taille marquée par une ceinture.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c11" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c11" value="S"><span>S</span></label><label class="size"><input type="radio" name="c11" value="M"><span>M</span></label><label class="size"><input type="radio" name="c11" value="L"><span>L</span></label><label class="size"><input type="radio" name="c11" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Tuniques" data-nom="Blouse volantée brodée" data-prix="185" data-img="cr-tu-video.webp">
+      <div class="photo"><img src="cr-tu-video.webp" alt="Blouse courte blanche à volant, plastron et manches brodés de motifs rouges, pantalon beige" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Tuniques</span>
+      <div class="line"><h2>Blouse volantée brodée</h2><span class="price">185 €</span></div>
+      <p class="desc">Blouse courte à volant, plastron et manches brodés de motifs slaves.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c12" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c12" value="S"><span>S</span></label><label class="size"><input type="radio" name="c12" value="M"><span>M</span></label><label class="size"><input type="radio" name="c12" value="L"><span>L</span></label><label class="size"><input type="radio" name="c12" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Manteaux & vestes" data-nom="Manteau long noir brodé" data-prix="480" data-img="cr-ma-long-noir.webp">
+      <div class="photo"><img src="cr-ma-long-noir.webp" alt="Manteau long noir, revers et bas brodés de motifs rouges, pantalon large noir" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">Manteaux & vestes</span>
+      <div class="line"><h2>Manteau long noir brodé</h2><span class="price">480 €</span></div>
+      <p class="desc">Manteau long et fluide, bandes brodées rouges le long du devant.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c13" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c13" value="S"><span>S</span></label><label class="size"><input type="radio" name="c13" value="M"><span>M</span></label><label class="size"><input type="radio" name="c13" value="L"><span>L</span></label><label class="size"><input type="radio" name="c13" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Manteaux & vestes" data-nom="Manteau bordeaux brodé" data-prix="520" data-img="cr-ma-bordeaux.webp">
+      <div class="photo"><img src="cr-ma-bordeaux.webp" alt="Manteau long bordeaux sur ensemble bordeaux, ceinture brodée, pochette brodée" width="600" height="900"></div>
+      <span class="cat-tag">Manteaux & vestes</span>
+      <div class="line"><h2>Manteau bordeaux brodé</h2><span class="price">520 €</span></div>
+      <p class="desc">Manteau long bordeaux, porté sur un ensemble assorti à ceinture brodée.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c14" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c14" value="S"><span>S</span></label><label class="size"><input type="radio" name="c14" value="M"><span>M</span></label><label class="size"><input type="radio" name="c14" value="L"><span>L</span></label><label class="size"><input type="radio" name="c14" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Manteaux & vestes" data-nom="Veste structurée noire brodée" data-prix="390" data-img="cr-ma-structuree-noire.webp">
+      <div class="photo"><img src="cr-ma-structuree-noire.webp" alt="Veste noire structurée, empiècements brodés rouges sur la poitrine et les manches" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Manteaux & vestes</span>
+      <div class="line"><h2>Veste structurée noire brodée</h2><span class="price">390 €</span></div>
+      <p class="desc">Épaules marquées, empiècements brodés rouges sur la poitrine et les poignets.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c15" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c15" value="S"><span>S</span></label><label class="size"><input type="radio" name="c15" value="M"><span>M</span></label><label class="size"><input type="radio" name="c15" value="L"><span>L</span></label><label class="size"><input type="radio" name="c15" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Manteaux & vestes" data-nom="Ensemble veste cargo brodé" data-prix="360" data-img="cr-ma-cargo-beige.webp">
+      <div class="photo"><img src="cr-ma-cargo-beige.webp" alt="Veste courte beige style cargo et pantalon large brodé de fleurs rouges" width="600" height="900"></div>
+      <span class="cat-tag">Manteaux & vestes</span>
+      <div class="line"><h2>Ensemble veste cargo brodé</h2><span class="price">360 €</span></div>
+      <p class="desc">Veste courte beige à poches et pantalon large brodé de fleurs rouges.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c16" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c16" value="S"><span>S</span></label><label class="size"><input type="radio" name="c16" value="M"><span>M</span></label><label class="size"><input type="radio" name="c16" value="L"><span>L</span></label><label class="size"><input type="radio" name="c16" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Manteaux & vestes" data-nom="Bomber velours fleuri" data-prix="340" data-img="cr-ma-bomber-fleuri.webp">
+      <div class="photo"><img src="cr-ma-bomber-fleuri.webp" alt="Bomber noir en velours brodé de grandes fleurs rouges et orange, porté avec un jean et un sac poupée" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Manteaux & vestes</span>
+      <div class="line"><h2>Bomber velours fleuri</h2><span class="price">340 €</span></div>
+      <p class="desc">Bomber en velours noir brodé de grandes fleurs rouges et orange, bords côtelés.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c17" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c17" value="S"><span>S</span></label><label class="size"><input type="radio" name="c17" value="M"><span>M</span></label><label class="size"><input type="radio" name="c17" value="L"><span>L</span></label><label class="size"><input type="radio" name="c17" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Jupes" data-nom="Mini-jupe fleurie brodée" data-prix="190" data-img="cr-ju-fleurie.webp">
+      <div class="photo"><img src="cr-ju-fleurie.webp" alt="Mini-jupe noire entièrement brodée de fleurs multicolores, portée avec un pull noir à col roulé" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Jupes</span>
+      <div class="line"><h2>Mini-jupe fleurie brodée</h2><span class="price">190 €</span></div>
+      <p class="desc">Mini-jupe noire entièrement brodée de fleurs, ceinture brodée assortie.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c18" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c18" value="S"><span>S</span></label><label class="size"><input type="radio" name="c18" value="M"><span>M</span></label><label class="size"><input type="radio" name="c18" value="L"><span>L</span></label><label class="size"><input type="radio" name="c18" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Jupes" data-nom="Jupe brocart dorée aux roses" data-prix="240" data-img="cr-poupee-brocart.webp">
+      <div class="photo"><img src="cr-poupee-brocart.webp" alt="Jupe courte en brocart doré à grosses roses rouges et noires, portée avec un t-shirt noir à poupée slave" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Jupes</span>
+      <div class="line"><h2>Jupe brocart dorée aux roses</h2><span class="price">240 €</span></div>
+      <p class="desc">Jupe courte en brocart doré, grosses roses rouges et noires.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c19" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c19" value="S"><span>S</span></label><label class="size"><input type="radio" name="c19" value="M"><span>M</span></label><label class="size"><input type="radio" name="c19" value="L"><span>L</span></label><label class="size"><input type="radio" name="c19" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Jupes" data-nom="Jupe courte fleurs dorées" data-prix="210" data-img="cr-poupee-fleurie.webp">
+      <div class="photo"><img src="cr-poupee-fleurie.webp" alt="Jupe courte noire imprimée de fleurs et baies rouges et dorées, portée avec un t-shirt poupée et des bottes brodées" width="600" height="900"></div>
+      <span class="cat-tag">Jupes</span>
+      <div class="line"><h2>Jupe courte fleurs dorées</h2><span class="price">210 €</span></div>
+      <p class="desc">Jupe courte noire aux fleurs, feuilles et baies rouges et dorées.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c20" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c20" value="S"><span>S</span></label><label class="size"><input type="radio" name="c20" value="M"><span>M</span></label><label class="size"><input type="radio" name="c20" value="L"><span>L</span></label><label class="size"><input type="radio" name="c20" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Accessoires" data-nom="Sac poupée brodé" data-prix="180" data-img="cr-ac-sac-poupee.webp">
+      <div class="photo"><img src="cr-ac-sac-poupee.webp" alt="Sac à main en forme de poupée slave, brodé de roses rouges, anse noire" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <span class="cat-tag">Accessoires</span>
+      <div class="line"><h2>Sac poupée brodé</h2><span class="price">180 €</span></div>
+      <p class="desc">Sac en forme de poupée slave, brodé de grosses roses rouges.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c21" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Accessoires" data-nom="Pochette poupée brodée" data-prix="120" data-img="ac-pochette-poupee.webp">
+      <div class="photo"><img src="ac-pochette-poupee.webp" alt="Pochette plate en forme de poupée slave, entièrement brodée de fleurs orange et rouges, bord en cuir noir" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Accessoires</span>
+      <div class="line"><h2>Pochette poupée brodée</h2><span class="price">120 €</span></div>
+      <p class="desc">Pochette plate brodée de fleurs, bord en cuir noir.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c22" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Accessoires" data-nom="Boucles d'oreilles poupées" data-prix="45" data-img="ac-boucles-poupees.webp">
+      <div class="photo"><img src="ac-boucles-poupees.webp" alt="Boucles d'oreilles pendantes en forme de poupées slaves brodées de fleurs" width="600" height="900"></div>
+      <span class="cat-tag">Accessoires</span>
+      <div class="line"><h2>Boucles d'oreilles poupées</h2><span class="price">45 €</span></div>
+      <p class="desc">Pendantes, en forme de poupées brodées de fleurs.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c23" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Czapka" data-nom="Czapka blanche à motifs slaves" data-prix="95" data-img="cz-blanche-motifs.webp">
+      <div class="photo"><img src="cz-blanche-motifs.webp" alt="Czapka blanche en fausse fourrure à rabats, tricotée de motifs slaves bordeaux, portée dans la neige" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">Czapka</span>
+      <div class="line"><h2>Czapka blanche à motifs slaves</h2><span class="price">95 €</span></div>
+      <p class="desc">Fausse fourrure blanche et rabats tricotés de motifs slaves bordeaux. Chaude et douce.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c24" value="S/M"><span>S/M</span></label><label class="size"><input type="radio" name="c24" value="L/XL"><span>L/XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="T-shirts" data-nom="T-shirt poupée slave" data-prix="65" data-img="cr-ts-poupee-2.webp">
+      <div class="photo"><img src="cr-ts-poupee-2.webp" alt="T-shirt noir à manches retroussées, imprimé poupée slave au foulard fleuri orange et rouge, porté avec un jean" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">T-shirts</span>
+      <div class="line"><h2>T-shirt poupée slave</h2><span class="price">65 €</span></div>
+      <p class="desc">T-shirt noir en coton, imprimé poupée slave au foulard fleuri.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c25" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c25" value="S"><span>S</span></label><label class="size"><input type="radio" name="c25" value="M"><span>M</span></label><label class="size"><input type="radio" name="c25" value="L"><span>L</span></label><label class="size"><input type="radio" name="c25" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="T-shirts" data-nom="T-shirt poupée brocart" data-prix="75" data-img="cr-poupee-brocart.webp">
+      <div class="photo"><img src="cr-poupee-brocart.webp" alt="T-shirt noir vu de dos, grande poupée slave encadrée d'arabesques dorées dans le dos" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">T-shirts</span>
+      <div class="line"><h2>T-shirt poupée brocart</h2><span class="price">75 €</span></div>
+      <p class="desc">T-shirt noir, grande poupée slave et arabesques dorées dans le dos.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c26" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c26" value="S"><span>S</span></label><label class="size"><input type="radio" name="c26" value="M"><span>M</span></label><label class="size"><input type="radio" name="c26" value="L"><span>L</span></label><label class="size"><input type="radio" name="c26" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="T-shirts" data-nom="T-shirt poupée fleurie" data-prix="60" data-img="cr-poupee-fleurie.webp">
+      <div class="photo"><img src="cr-poupee-fleurie.webp" alt="T-shirt noir ajusté imprimé d'une poupée slave fleurie, porté avec une jupe fleurie" width="600" height="900"></div>
+      <span class="cat-tag">T-shirts</span>
+      <div class="line"><h2>T-shirt poupée fleurie</h2><span class="price">60 €</span></div>
+      <p class="desc">T-shirt noir ajusté, petite poupée slave fleurie sur le devant.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c27" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c27" value="S"><span>S</span></label><label class="size"><input type="radio" name="c27" value="M"><span>M</span></label><label class="size"><input type="radio" name="c27" value="L"><span>L</span></label><label class="size"><input type="radio" name="c27" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Sport" data-nom="Ensemble bomber bordeaux" data-prix="220" data-img="cr-sp-bordeaux.webp">
+      <div class="photo"><img src="cr-sp-bordeaux.webp" alt="Bomber bordeaux brodé de fleurs et short gris brodé" width="600" height="900"><span class="badge">Édition limitée</span></div>
+      <span class="cat-tag">Sport</span>
+      <div class="line"><h2>Ensemble bomber bordeaux</h2><span class="price">220 €</span></div>
+      <p class="desc">Bomber bordeaux brodé de roses et short molletonné brodé assorti.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c28" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c28" value="S"><span>S</span></label><label class="size"><input type="radio" name="c28" value="M"><span>M</span></label><label class="size"><input type="radio" name="c28" value="L"><span>L</span></label><label class="size"><input type="radio" name="c28" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Sport" data-nom="Jogging ivoire brodé" data-prix="180" data-img="cr-sp-ivoire.webp">
+      <div class="photo"><img src="cr-sp-ivoire.webp" alt="Sweat court et jogging ivoire brodés de motifs rouges" width="600" height="900"></div>
+      <span class="cat-tag">Sport</span>
+      <div class="line"><h2>Jogging ivoire brodé</h2><span class="price">180 €</span></div>
+      <p class="desc">Sweat court et jogging ivoire, broderies rouges sur le buste et les jambes.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c29" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c29" value="S"><span>S</span></label><label class="size"><input type="radio" name="c29" value="M"><span>M</span></label><label class="size"><input type="radio" name="c29" value="L"><span>L</span></label><label class="size"><input type="radio" name="c29" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Sport" data-nom="Ensemble ivoire oversize" data-prix="190" data-img="cr-sp-ivoire-2.webp">
+      <div class="photo"><img src="cr-sp-ivoire-2.webp" alt="Sweat oversize et pantalon large ivoire brodés de motifs rouges" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <span class="cat-tag">Sport</span>
+      <div class="line"><h2>Ensemble ivoire oversize</h2><span class="price">190 €</span></div>
+      <p class="desc">Coupe oversize, motifs brodés rouges sur les manches et le pantalon.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c30" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c30" value="S"><span>S</span></label><label class="size"><input type="radio" name="c30" value="M"><span>M</span></label><label class="size"><input type="radio" name="c30" value="L"><span>L</span></label><label class="size"><input type="radio" name="c30" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-cat="Sport" data-nom="Ensemble sport rouge & sac" data-prix="240" data-img="cr-sp-rouge.webp">
+      <div class="photo"><img src="cr-sp-rouge.webp" alt="Ensemble sport rouge à bandes brodées et sac de sport blanc brodé" width="600" height="900"></div>
+      <span class="cat-tag">Sport</span>
+      <div class="line"><h2>Ensemble sport rouge & sac</h2><span class="price">240 €</span></div>
+      <p class="desc">Ensemble rouge à bandes brodées, avec son sac de sport brodé assorti.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="c31" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="c31" value="S"><span>S</span></label><label class="size"><input type="radio" name="c31" value="M"><span>M</span></label><label class="size"><input type="radio" name="c31" value="L"><span>L</span></label><label class="size"><input type="radio" name="c31" value="XL"><span>XL</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+  </div>
+</main>
 
-        <div class="product-card">
-            <img src="pha/veste-bomber-brodee-bordeaux-femme-slave-hafta.jpg" alt="Veste bomber brodée bordeaux femme, motifs floraux slaves">
-            <span class="product-badge badge-coup">COUP DE CŒUR</span>
-            <div class="product-info">
-                <h3 class="product-name">Veste Bomber Brodée Bordeaux</h3>
-                <p class="product-desc">Veste bomber brodée, motifs floraux slaves millénaires</p>
-                <p class="product-price">320 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Veste Bomber Brodée Bordeaux" data-price="320 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
+<section class="infos gutter" aria-label="Informations">
+  <ul>
+    <li><strong>Brodée main & machine</strong><span>En petite série, sans stock inutile</span></li>
+    <li><strong>Édition limitée</strong><span>Chaque modèle est produit en quantité réduite</span></li>
+    <li><strong>Précommande</strong><span>Délai indicatif : 4 à 6 semaines</span></li>
+  </ul>
+</section>
+<div class="back gutter"><a href="index.html">← Retour à l'accueil</a></div>
+<footer class="foot gutter">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="mentions-legales.html">Mentions légales</a> · <a href="conditions-generales.html">CGV</a></footer>
 
-        <div class="product-card">
-            <img src="pha/ensemble-jogging-ivoire-brode-femme-slave-hafta.jpg" alt="Ensemble jogging ivoire brodé femme, broderies géométriques rouges">
-            <span class="product-badge badge-precommande">PRÉCOMMANDE</span>
-            <div class="product-info">
-                <h3 class="product-name">Ensemble Jogging Ivoire</h3>
-                <p class="product-desc">Ensemble 2 pièces ivoire, broderies géométriques rouges</p>
-                <p class="product-price">350 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Ensemble Jogging Ivoire" data-price="350 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/tunique-brodee-ivoire-femme-slave-hafta.jpg" alt="Tunique brodée ivoire femme, broderies géométriques rouges folklore slave">
-            <span class="product-badge badge-nouveau">NOUVEAU</span>
-            <div class="product-info">
-                <h3 class="product-name">Tunique Brodée Ivoire</h3>
-                <p class="product-desc">Tunique longue ivoire, broderies géométriques rouges</p>
-                <p class="product-price">290 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Tunique Brodée Ivoire" data-price="290 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/ensemble-veste-pantalon-beige-brode-femme-slave-hafta.jpg" alt="Ensemble veste pantalon beige brodé femme, édition limitée">
-            <span class="product-badge badge-edition">ÉDITION LIMITÉE</span>
-            <div class="product-info">
-                <h3 class="product-name">Ensemble Veste Pantalon Beige</h3>
-                <p class="product-desc">Ensemble 2 pièces beige, veste structurée et pantalon brodé</p>
-                <p class="product-price">420 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Ensemble Veste Pantalon Beige" data-price="420 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/blouse-ceinturee-brodee-femme-slave-hafta.jpg" alt="Blouse ceinturée brodée femme ivoire, broderies florales slaves">
-            <span class="product-badge badge-coup">COUP DE CŒUR</span>
-            <div class="product-info">
-                <h3 class="product-name">Blouse Ceinturée Brodée</h3>
-                <p class="product-desc">Blouse ivoire ceinturée, broderies florales slaves</p>
-                <p class="product-price">310 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Blouse Ceinturée Brodée" data-price="310 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/ensemble-tailleur-noir-brode-femme-2-slave-hafta.jpg" alt="Ensemble tailleur noir brodé femme, veste et pantalon broderies rouges">
-            <span class="product-badge badge-precommande">PRÉCOMMANDE</span>
-            <div class="product-info">
-                <h3 class="product-name">Ensemble Tailleur Noir Brodé</h3>
-                <p class="product-desc">Ensemble veste et pantalon noir, broderies rouges slaves</p>
-                <p class="product-price">450 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Ensemble Tailleur Noir Brodé" data-price="450 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/veste-structuree-noire-brodee-femme-slave-hafta.jpg" alt="Veste structurée noire brodée femme, broderies rouges géométriques">
-            <span class="product-badge badge-nouveau">NOUVEAU</span>
-            <div class="product-info">
-                <h3 class="product-name">Veste Structurée Noire Brodée</h3>
-                <p class="product-desc">Veste noire structurée, broderies rouges géométriques</p>
-                <p class="product-price">380 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Veste Structurée Noire Brodée" data-price="380 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="pha/ensemble-jogging-ivoire-brode-femme-2-slave-hafta.jpg" alt="Ensemble jogging ivoire brodé femme, motifs polonais anciens">
-            <span class="product-badge badge-edition">ÉDITION LIMITÉE</span>
-            <div class="product-info">
-                <h3 class="product-name">Ensemble Jogging Ivoire Brodé</h3>
-                <p class="product-desc">Ensemble crop top et pantalon large ivoire, motifs polonais anciens</p>
-                <p class="product-price">350 €</p>
-                <a href="#" class="btn-primary add-to-cart" data-name="Ensemble Jogging Ivoire Brodé" data-price="350 €">AJOUTER AU PANIER 🛒</a>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-logo">SLAVE HAFTA</div>
-        <p class="footer-text">© 2024 Slave Hafta. Tous droits réservés.</p>
-    </footer>
-
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="lightboxClose">&times;</span>
-        <img src="" alt="Image agrandie" id="lightboxImg">
-    </div>
-
-    <script>
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        document.getElementById('cartCount').textContent = cart.length;
-
-        document.querySelectorAll('.add-to-cart').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const name = this.getAttribute('data-name');
-                const price = this.getAttribute('data-price');
-                cart.push({ name, price });
-                localStorage.setItem('cart', JSON.stringify(cart));
-                document.getElementById('cartCount').textContent = cart.length;
-                alert(name + ' a été ajouté au panier !');
-            });
-        });
-
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const lightboxClose = document.getElementById('lightboxClose');
-
-        document.querySelectorAll('.product-card img').forEach(img => {
-            img.addEventListener('click', function() {
-                lightboxImg.src = this.src;
-                lightbox.classList.add('active');
-            });
-        });
-
-        lightboxClose.addEventListener('click', function() {
-            lightbox.classList.remove('active');
-        });
-
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-            }
-        });
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://20301050.github.io/SLAVE-HAFTA/" },
-        { "@type": "ListItem", "position": 2, "name": "Collection", "item": "https://20301050.github.io/SLAVE-HAFTA/collection.html" }
-      ]
-    }
-    </script>
+<script src="panier.js"></script>
+<script src="menu.js"></script>
+<script>
+(function(){
+  // Précommander : vérifie la taille puis ajoute au panier
+  document.querySelectorAll('.card').forEach(function(c){
+    var b=c.querySelector('.btn'),err=c.querySelector('.err');
+    c.querySelectorAll('input').forEach(function(i){i.addEventListener('change',function(){err.textContent=''})});
+    b.addEventListener('click',function(){
+      var t=c.querySelector('input:checked');
+      if(!t){err.textContent='Choisissez votre taille.';c.querySelector('input').focus();return;}
+      window.shAjouter({nom:c.dataset.nom,prix:+c.dataset.prix,img:c.dataset.img,taille:t.value});
+      b.textContent='Ajoutée ✓';setTimeout(function(){b.textContent='Précommander'},1800);
+    });
+  });
+  // Filtres
+  var chips=document.querySelectorAll('.chip'),cnt=document.getElementById('count');
+  chips.forEach(function(ch){ch.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed',x===ch?'true':'false')});
+    var f=ch.dataset.f,n=0;document.querySelectorAll('.card').forEach(function(c){var ok=!f||c.dataset.cat===f;c.hidden=!ok;if(ok)n++});
+    cnt.textContent=n+(n>1?' pièces':' pièce')+' · Précommande';
+  })});
+  // Menu Collection
+  var dd=document.getElementById('dd'),db=dd.querySelector('.dd-btn'),m=document.getElementById('dd-menu'),tm;
+  function open(){clearTimeout(tm);m.hidden=false;db.setAttribute('aria-expanded','true')}
+  function close(){m.hidden=true;db.setAttribute('aria-expanded','false')}
+  db.addEventListener('click',function(){m.hidden?open():close()});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',function(){tm=setTimeout(close,180)})}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){close();db.focus()}});
+  document.addEventListener('click',function(e){if(!dd.contains(e.target))close()});
+})();
+</script>
 </body>
 </html>

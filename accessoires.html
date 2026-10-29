@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KBSCJ3QW9');
+</script>
+<link rel="icon" href="logo-rond.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Accessoires · SLAVE HAFTA</title>
+<meta name="description" content="Accessoires SLAVE HAFTA : sac et pochette poupée brodés, boucles d'oreilles poupées slaves.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap">
+<style>
+/* Page catégorie : même charte que l'accueil. Grille de 4 pièces, choix de la taille, précommande vers le panier. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --gold:#C9A84C; --gold-light:#D4AF37; --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* Barre du haut */
+.nav{position:relative;z-index:20;background:var(--bordeaux);border-bottom:1px solid rgba(201,168,76,.25)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px;max-width:1440px;margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.right{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.right{gap:10px}}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover,.links a[aria-current]{color:var(--gold)}
+@media (max-width:760px){.links{display:none}}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--gold);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms var(--ease)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover,.dd-menu ul a[aria-current]{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+
+/* En-tête de catégorie */
+.head{max-width:1440px;margin-inline:auto;padding-block:clamp(28px,4vw,56px) clamp(24px,3vw,40px);display:grid;gap:12px;text-align:center;justify-items:center}
+.crumbs{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.head h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(44px,7vw,92px);line-height:1;letter-spacing:.14em;padding-left:.14em;text-transform:uppercase;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.head p{margin:0;max-width:44ch;font-family:var(--script);font-style:italic;font-size:clamp(19px,2vw,24px);color:var(--cream)}
+.meta{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light)}
+
+/* Grille produits */
+.grid{max-width:1440px;margin-inline:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,26px);padding-bottom:clamp(56px,7vw,100px)}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{display:flex;flex-direction:column;gap:12px;min-width:0;animation:cardIn 800ms var(--ease) both}
+.card:nth-child(1){animation-delay:80ms}.card:nth-child(2){animation-delay:180ms}.card:nth-child(3){animation-delay:280ms}.card:nth-child(4){animation-delay:380ms}
+@keyframes cardIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.photo{position:relative;overflow:hidden;aspect-ratio:2/3;max-width:100%;background:var(--ink);border:1px solid rgba(201,168,76,.3)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){.card:hover .photo img{transform:scale(1.05)}}
+.badge{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--gold-light);border:1px solid var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:5px 10px}
+.line{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.card h2{margin:0;font-family:var(--display);font-weight:600;font-size:20px;line-height:1.25}
+.price{font-family:var(--display);font-size:19px;color:var(--gold-light);white-space:nowrap;font-variant-numeric:tabular-nums}
+.desc{margin:0;font-size:14px;line-height:1.55;color:rgba(245,240,232,.85)}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:6px;padding:0}
+.size{position:relative}
+.size input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.size span{display:grid;place-items:center;min-width:44px;height:44px;padding:0 8px;border:1px solid rgba(245,240,232,.35);font-size:12px;letter-spacing:.08em;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.size input:checked+span{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.size input:focus-visible+span{outline:2px solid var(--gold-light);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.size:hover span{border-color:var(--gold)}}
+.btn{min-height:48px;margin-top:auto;font:700 12px var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--white);background:transparent;border:1px solid var(--gold);cursor:pointer;transition:background-color .2s ease,color .2s ease,transform .12s ease}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn:active{transform:scale(.97)}
+.err{margin:0;min-height:1.2em;font-size:13px;color:var(--gold-light)}
+
+.soon{aspect-ratio:2/3;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:1px dashed rgba(201,168,76,.7);background:rgba(245,240,232,.06)}.soon span{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.soon strong{font-family:var(--script);font-style:italic;font-weight:500;font-size:28px;color:var(--cream)}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1100px}@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
+/* Bande d'infos */
+.infos{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
+.infos ul{list-style:none;margin:0 auto;max-width:1180px;padding-block:36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:center}
+@media (max-width:700px){.infos ul{grid-template-columns:minmax(0,1fr)}}
+.infos strong{display:block;font-family:var(--display);font-weight:600;font-size:18px;color:var(--gold-light)}
+.infos span{font-size:13px;color:rgba(245,240,232,.8)}
+.back{display:flex;justify-content:center;padding-block:28px;background:var(--bordeaux-dark)}
+.back a{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--gold-light);border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+.foot{background:var(--ink);border-top:1px solid rgba(201,168,76,.35);text-align:center;padding-block:28px;font-size:12px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.card{animation:none}.photo img,.btn,.size span{transition:none}.dd-menu{animation:none}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="index.html"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="right">
+    <div class="links">
+      <a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button>
+        <div class="dd-menu" id="dd-menu" hidden>
+          <div class="dd-col"><p class="dd-t">La collection</p><ul>
+            <li><a href="robes.html">Robes</a></li>
+            <li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html" aria-current="page">Accessoires</a></li>
+          </ul></div>
+          <div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul>
+            <li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li>
+          </ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div>
+        </div>
+      </div>
+      <a href="histoire.html">NOTRE HISTOIRE</a><a href="contact.html">CONTACT</a>
+    </div>
+    <button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button>
+  </div>
+</div></nav>
+
+<header class="head gutter">
+  <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> · Collection · Accessoires</nav>
+  <h1>Accessoires</h1>
+  <p>Sacs et bijoux poupées slaves, brodés de fleurs, pour finir chaque tenue.</p>
+  <span class="meta">3 pièces · Précommande</span>
+</header>
+
+<main class="gutter">
+  <div class="grid">
+    <article class="card" data-nom="Sac poupée brodé" data-prix="180" data-img="cr-ac-sac-poupee.webp">
+      <div class="photo"><img src="cr-ac-sac-poupee.webp" alt="Sac à main en forme de poupée slave, brodé de roses rouges, anse noire" width="600" height="900"><span class="badge">Coup de cœur</span></div>
+      <div class="line"><h2>Sac poupée brodé</h2><span class="price">180 €</span></div>
+      <p class="desc">Sac en forme de poupée slave, brodé de grosses roses rouges.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="t1" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-nom="Pochette poupée brodée" data-prix="120" data-img="ac-pochette-poupee.webp">
+      <div class="photo"><img src="ac-pochette-poupee.webp" alt="Pochette plate en forme de poupée slave, entièrement brodée de fleurs orange et rouges, bord en cuir noir" width="600" height="900"><span class="badge">Nouveau</span></div>
+      <div class="line"><h2>Pochette poupée brodée</h2><span class="price">120 €</span></div>
+      <p class="desc">Pochette plate brodée de fleurs, bord en cuir noir.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="t2" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+    <article class="card" data-nom="Boucles d'oreilles poupées" data-prix="45" data-img="ac-boucles-poupees.webp">
+      <div class="photo"><img src="ac-boucles-poupees.webp" alt="Boucles d'oreilles pendantes en forme de poupées slaves brodées de fleurs" width="600" height="900"></div>
+      <div class="line"><h2>Boucles d'oreilles poupées</h2><span class="price">45 €</span></div>
+      <p class="desc">Pendantes, en forme de poupées brodées de fleurs.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="t3" value="Unique" checked><span>Taille unique</span></label>
+      </fieldset>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+    </article>
+  </div>
+</main>
+
+<section class="infos gutter" aria-label="Informations">
+  <ul>
+    <li><strong>Brodée main & machine</strong><span>En petite série, sans stock inutile</span></li>
+    <li><strong>Édition limitée</strong><span>Chaque modèle est produit en quantité réduite</span></li>
+    <li><strong>Précommande</strong><span>Délai indicatif : 4 à 6 semaines</span></li>
+  </ul>
+</section>
+<div class="back gutter"><a href="index.html">← Retour à l'accueil</a></div>
+<footer class="foot gutter">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="mentions-legales.html">Mentions légales</a> · <a href="conditions-generales.html">CGV</a></footer>
+
+<script src="panier.js"></script>
+<script src="menu.js"></script>
+<script>
+(function(){
+  // Précommander : vérifie la taille puis ajoute au panier
+  document.querySelectorAll('.card').forEach(function(c){
+    var b=c.querySelector('.btn'),err=c.querySelector('.err');
+    c.querySelectorAll('input').forEach(function(i){i.addEventListener('change',function(){err.textContent=''})});
+    b.addEventListener('click',function(){
+      var t=c.querySelector('input:checked');
+      if(!t){err.textContent='Choisissez votre taille.';c.querySelector('input').focus();return;}
+      window.shAjouter({nom:c.dataset.nom,prix:+c.dataset.prix,img:c.dataset.img,taille:t.value});
+      b.textContent='Ajoutée ✓';setTimeout(function(){b.textContent='Précommander'},1800);
+    });
+  });
+  // Menu Collection
+  var dd=document.getElementById('dd'),db=dd.querySelector('.dd-btn'),m=document.getElementById('dd-menu'),tm;
+  function open(){clearTimeout(tm);m.hidden=false;db.setAttribute('aria-expanded','true')}
+  function close(){m.hidden=true;db.setAttribute('aria-expanded','false')}
+  db.addEventListener('click',function(){m.hidden?open():close()});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',function(){tm=setTimeout(close,180)})}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){close();db.focus()}});
+  document.addEventListener('click',function(e){if(!dd.contains(e.target))close()});
+})();
+</script>
+</body>
+</html>
