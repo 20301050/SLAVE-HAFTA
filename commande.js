@@ -61,6 +61,10 @@
     '.sg thead th{background:#8B0000;color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase}',
     '.sg tbody th{font:700 16px "Playfair Display",Georgia,serif;color:#8B0000}',
     '.sg ol{margin:0;padding-left:20px;line-height:1.6;font-size:15px}',
+    '.pc-steps{list-style:none;padding:0!important;display:grid;gap:12px;counter-reset:pc}',
+    '.pc-steps li{counter-increment:pc;display:grid;grid-template-columns:40px 1fr;column-gap:14px;align-items:start;background:#fff;border:1px solid rgba(139,0,0,.15);padding:12px 14px}',
+    '.pc-steps li::before{content:counter(pc);grid-row:span 2;width:40px;height:40px;border-radius:50%;background:#8B0000;color:#D4AF37;display:grid;place-items:center;font:700 18px "Playfair Display",Georgia,serif}',
+    '.pc-steps b{font:600 17px "Playfair Display",Georgia,serif;color:#8B0000}.pc-steps span{font-size:14px;color:#5a2a2a}',
     '.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}',
     '@media (prefers-reduced-motion:reduce){.ck,.sg{transition:none}.ck-btn{transition:none}}'
   ].join('');
@@ -80,6 +84,7 @@
     '<tr><th scope="row">M</th><td>38</td><td>88 – 92</td><td>70 – 74</td><td>96 – 100</td></tr>' +
     '<tr><th scope="row">L</th><td>40</td><td>92 – 96</td><td>74 – 78</td><td>100 – 104</td></tr>' +
     '<tr><th scope="row">XL</th><td>42</td><td>96 – 100</td><td>78 – 82</td><td>104 – 108</td></tr>' +
+    '<tr><th scope="row">XXL</th><td>44</td><td>100 – 106</td><td>82 – 88</td><td>108 – 114</td></tr>' +
     '</tbody></table></div>' +
     '<p><b>Czapka :</b> S/M pour un tour de tête de 54 à 56 cm, L/XL de 57 à 59 cm.</p>' +
     '<h3 style="margin:0 0 8px;font:600 18px Playfair Display,Georgia,serif;color:#8B0000">Comment se mesurer</h3>' +
@@ -92,6 +97,26 @@
   sg.addEventListener('click', function (e) { if (e.target === sg) guideFermer(); });
   sg.querySelector('.sg-x').addEventListener('click', guideFermer);
   window.shGuide = guideOuvrir;
+
+  /* ---------- Comment marche la précommande ---------- */
+  var pc = document.createElement('div'); pc.className = 'sg'; pc.hidden = true;
+  pc.setAttribute('role', 'dialog'); pc.setAttribute('aria-modal', 'true'); pc.setAttribute('aria-labelledby', 'pc-t');
+  pc.innerHTML = '<div class="sg-box"><button class="sg-x" type="button" aria-label="Fermer">×</button>' +
+    '<h2 id="pc-t">Comment marche la précommande ?</h2>' +
+    '<p>Chaque pièce SLAVE HAFTA est fabriquée pour vous, en édition limitée. Pas de stock : rien n’est produit pour rien.</p>' +
+    '<ol class="pc-steps">' +
+    '<li><b>Vous précommandez</b><span>Choisissez votre taille et réglez votre commande en ligne.</span></li>' +
+    '<li><b>Nous brodons votre pièce</b><span>Elle est confectionnée et brodée à la machine dans notre atelier partenaire.</span></li>' +
+    '<li><b>Vous la recevez</b><span>Expédition sous 4 à 6 semaines (délai indicatif), avec un e-mail de suivi.</span></li>' +
+    '</ol>' +
+    '<p style="margin-top:16px">Une question sur votre commande ? Écrivez-nous depuis la page Contact.</p></div>';
+  document.body.appendChild(pc);
+  var pcPrev = null;
+  function precoOuvrir() { pcPrev = document.activeElement; pc.hidden = false; requestAnimationFrame(function () { pc.classList.add('on'); pc.querySelector('.sg-x').focus(); }); }
+  function precoFermer() { pc.classList.remove('on'); setTimeout(function () { pc.hidden = true; }, 200); if (pcPrev && pcPrev.focus) pcPrev.focus(); }
+  pc.addEventListener('click', function (e) { if (e.target === pc) precoFermer(); });
+  pc.querySelector('.sg-x').addEventListener('click', precoFermer);
+  window.shPreco = precoOuvrir;
 
   /* ---------- Tunnel de commande ---------- */
   var LIV = [
@@ -229,7 +254,7 @@
   function fermer() { ck.classList.remove('on'); setTimeout(function () { ck.hidden = true; ck.innerHTML = ''; }, 250); document.body.style.overflow = ''; if (ckPrev && ckPrev.focus) ckPrev.focus(); }
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape') return;
-    if (!sg.hidden) guideFermer(); else if (!ck.hidden) fermer();
+    if (!sg.hidden) guideFermer(); else if (!pc.hidden) precoFermer(); else if (!ck.hidden) fermer();
   });
 
   window.shCommande = function (articles, vider) {

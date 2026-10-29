@@ -101,7 +101,7 @@ legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--g
 
 .soon{aspect-ratio:2/3;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:1px dashed rgba(201,168,76,.7);background:rgba(245,240,232,.06)}.soon span{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.soon strong{font-family:var(--script);font-style:italic;font-weight:500;font-size:28px;color:var(--cream)}
 .grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1100px}@media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
-.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}.guide-btn:focus-visible{outline:2px solid #F1D27A;outline-offset:3px}
+.preco-btn{background:none;border:0;padding:8px 0 0;margin:0;color:rgba(255,255,255,.75);font:400 13px Lato,Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer;align-self:center;min-height:32px}.preco-btn:hover{color:#F1D27A}.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}.guide-btn:focus-visible{outline:2px solid #F1D27A;outline-offset:3px}
 /* Bande d'infos */
 .infos{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
 .infos ul{list-style:none;margin:0 auto;max-width:1180px;padding-block:36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:center}
@@ -152,40 +152,43 @@ legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--g
       <div class="line"><h2>Mini-jupe fleurie brodée</h2><span class="price">190 €</span></div>
       <p class="desc">Mini-jupe noire entièrement brodée de fleurs, ceinture brodée assortie.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t1" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t1" value="S"><span>S</span></label><label class="size"><input type="radio" name="t1" value="M"><span>M</span></label><label class="size"><input type="radio" name="t1" value="L"><span>L</span></label><label class="size"><input type="radio" name="t1" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t1" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t1" value="S"><span>S</span></label><label class="size"><input type="radio" name="t1" value="M"><span>M</span></label><label class="size"><input type="radio" name="t1" value="L"><span>L</span></label><label class="size"><input type="radio" name="t1" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t1" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Jupe brocart dorée aux roses" data-prix="240" data-img="cr-poupee-brocart.webp">
       <div class="photo"><img src="cr-poupee-brocart.webp" alt="Jupe courte en brocart doré à grosses roses rouges et noires, portée avec un t-shirt noir à poupée slave" width="600" height="900"><span class="badge">Coup de cœur</span></div>
       <div class="line"><h2>Jupe brocart dorée aux roses</h2><span class="price">240 €</span></div>
       <p class="desc">Jupe courte en brocart doré, grosses roses rouges et noires.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t2" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t2" value="S"><span>S</span></label><label class="size"><input type="radio" name="t2" value="M"><span>M</span></label><label class="size"><input type="radio" name="t2" value="L"><span>L</span></label><label class="size"><input type="radio" name="t2" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t2" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t2" value="S"><span>S</span></label><label class="size"><input type="radio" name="t2" value="M"><span>M</span></label><label class="size"><input type="radio" name="t2" value="L"><span>L</span></label><label class="size"><input type="radio" name="t2" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t2" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Jupe courte fleurs dorées" data-prix="210" data-img="cr-poupee-fleurie.webp">
       <div class="photo"><img src="cr-poupee-fleurie.webp" alt="Jupe courte noire imprimée de fleurs et baies rouges et dorées, portée avec un t-shirt poupée et des bottes brodées" width="600" height="900"></div>
       <div class="line"><h2>Jupe courte fleurs dorées</h2><span class="price">210 €</span></div>
       <p class="desc">Jupe courte noire aux fleurs, feuilles et baies rouges et dorées.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t3" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t3" value="S"><span>S</span></label><label class="size"><input type="radio" name="t3" value="M"><span>M</span></label><label class="size"><input type="radio" name="t3" value="L"><span>L</span></label><label class="size"><input type="radio" name="t3" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t3" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t3" value="S"><span>S</span></label><label class="size"><input type="radio" name="t3" value="M"><span>M</span></label><label class="size"><input type="radio" name="t3" value="L"><span>L</span></label><label class="size"><input type="radio" name="t3" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t3" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
   </div>
 </main>
 
 <section class="infos gutter" aria-label="Informations">
   <ul>
-    <li><strong>Brodée main & machine</strong><span>En petite série, sans stock inutile</span></li>
+    <li><strong>Brodée à la machine</strong><span>En petite série, sans stock inutile</span></li>
     <li><strong>Édition limitée</strong><span>Chaque modèle est produit en quantité réduite</span></li>
     <li><strong>Précommande</strong><span>Délai indicatif : 4 à 6 semaines</span></li>
   </ul>

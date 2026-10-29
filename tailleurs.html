@@ -100,7 +100,7 @@ legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--g
 .err{margin:0;min-height:1.2em;font-size:13px;color:var(--gold-light)}
 
 .grid{grid-template-columns:repeat(5,minmax(0,1fr))}@media (max-width:1200px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
-.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}.guide-btn:focus-visible{outline:2px solid #F1D27A;outline-offset:3px}
+.preco-btn{background:none;border:0;padding:8px 0 0;margin:0;color:rgba(255,255,255,.75);font:400 13px Lato,Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer;align-self:center;min-height:32px}.preco-btn:hover{color:#F1D27A}.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}.guide-btn:focus-visible{outline:2px solid #F1D27A;outline-offset:3px}
 /* Bande d'infos */
 .infos{background:var(--bordeaux-dark);border-top:1px solid rgba(201,168,76,.3)}
 .infos ul{list-style:none;margin:0 auto;max-width:1180px;padding-block:36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:center}
@@ -151,62 +151,67 @@ legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--g
       <div class="line"><h2>Tailleur blanc brodé de roses</h2><span class="price">520 €</span></div>
       <p class="desc">Veste ajustée brodée de roses rouges et noires sur le devant, pantalon large assorti.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t1" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t1" value="S"><span>S</span></label><label class="size"><input type="radio" name="t1" value="M"><span>M</span></label><label class="size"><input type="radio" name="t1" value="L"><span>L</span></label><label class="size"><input type="radio" name="t1" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t1" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t1" value="S"><span>S</span></label><label class="size"><input type="radio" name="t1" value="M"><span>M</span></label><label class="size"><input type="radio" name="t1" value="L"><span>L</span></label><label class="size"><input type="radio" name="t1" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t1" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Tailleur noir à galons brodés" data-prix="480" data-img="cr-tl-noir-galons.webp">
       <div class="photo"><img src="cr-tl-noir-galons.webp" alt="Tailleur noir oversize, galons brodés rouges à la taille et aux poignets, pantalon large" width="600" height="900"></div>
       <div class="line"><h2>Tailleur noir à galons brodés</h2><span class="price">480 €</span></div>
       <p class="desc">Veste oversize et pantalon large, galons brodés rouges à la taille et aux poignets.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t2" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t2" value="S"><span>S</span></label><label class="size"><input type="radio" name="t2" value="M"><span>M</span></label><label class="size"><input type="radio" name="t2" value="L"><span>L</span></label><label class="size"><input type="radio" name="t2" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t2" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t2" value="S"><span>S</span></label><label class="size"><input type="radio" name="t2" value="M"><span>M</span></label><label class="size"><input type="radio" name="t2" value="L"><span>L</span></label><label class="size"><input type="radio" name="t2" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t2" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Tailleur crème motifs géométriques" data-prix="490" data-img="cr-tl-creme-geometrique.webp">
       <div class="photo"><img src="cr-tl-creme-geometrique.webp" alt="Tailleur crème, revers, poches, poignets et jambe du pantalon brodés de motifs géométriques rouges" width="600" height="900"></div>
       <div class="line"><h2>Tailleur crème motifs géométriques</h2><span class="price">490 €</span></div>
       <p class="desc">Motifs géométriques rouges sur les revers, les poignets et le long de la jambe. Coupe droite.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t3" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t3" value="S"><span>S</span></label><label class="size"><input type="radio" name="t3" value="M"><span>M</span></label><label class="size"><input type="radio" name="t3" value="L"><span>L</span></label><label class="size"><input type="radio" name="t3" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t3" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t3" value="S"><span>S</span></label><label class="size"><input type="radio" name="t3" value="M"><span>M</span></label><label class="size"><input type="radio" name="t3" value="L"><span>L</span></label><label class="size"><input type="radio" name="t3" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t3" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Ensemble col montant crème" data-prix="540" data-img="cr-tl-col-montant.webp">
       <div class="photo"><img src="cr-tl-col-montant.webp" alt="Veste courte crème à col montant entièrement brodée de fleurs rouges, pantalon crème" width="600" height="900"><span class="badge">Coup de cœur</span></div>
       <div class="line"><h2>Ensemble col montant crème</h2><span class="price">540 €</span></div>
       <p class="desc">Veste courte entièrement brodée de fleurs rouges et pantalon crème à pinces.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t4" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t4" value="S"><span>S</span></label><label class="size"><input type="radio" name="t4" value="M"><span>M</span></label><label class="size"><input type="radio" name="t4" value="L"><span>L</span></label><label class="size"><input type="radio" name="t4" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t4" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t4" value="S"><span>S</span></label><label class="size"><input type="radio" name="t4" value="M"><span>M</span></label><label class="size"><input type="radio" name="t4" value="L"><span>L</span></label><label class="size"><input type="radio" name="t4" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t4" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
     <article class="card" data-nom="Tailleur crème ceinture brodée" data-prix="510" data-img="cr-tl-creme-ceinture.webp">
       <div class="photo"><img src="cr-tl-creme-ceinture.webp" alt="Tailleur crème, manches et jambes brodées de fleurs rouges, ceinture tissée rouge à pompon" width="600" height="900"><span class="badge">Nouveau</span></div>
       <div class="line"><h2>Tailleur crème ceinture brodée</h2><span class="price">510 €</span></div>
       <p class="desc">Manches et jambes brodées de fleurs, ceinture tissée rouge nouée à pompons.</p>
       <fieldset><legend>Taille</legend>
-        <label class="size"><input type="radio" name="t5" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t5" value="S"><span>S</span></label><label class="size"><input type="radio" name="t5" value="M"><span>M</span></label><label class="size"><input type="radio" name="t5" value="L"><span>L</span></label><label class="size"><input type="radio" name="t5" value="XL"><span>XL</span></label>
+        <label class="size"><input type="radio" name="t5" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t5" value="S"><span>S</span></label><label class="size"><input type="radio" name="t5" value="M"><span>M</span></label><label class="size"><input type="radio" name="t5" value="L"><span>L</span></label><label class="size"><input type="radio" name="t5" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t5" value="XXL"><span>XXL</span></label>
       </fieldset>
       <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
       <p class="err" aria-live="polite"></p>
       <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
     </article>
   </div>
 </main>
 
 <section class="infos gutter" aria-label="Informations">
   <ul>
-    <li><strong>Brodée main & machine</strong><span>En petite série, sans stock inutile</span></li>
+    <li><strong>Brodée à la machine</strong><span>En petite série, sans stock inutile</span></li>
     <li><strong>Édition limitée</strong><span>Chaque modèle est produit en quantité réduite</span></li>
     <li><strong>Précommande</strong><span>Délai indicatif : 4 à 6 semaines</span></li>
   </ul>
