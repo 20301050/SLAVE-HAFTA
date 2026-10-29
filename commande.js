@@ -61,7 +61,7 @@
     '.sg thead th{background:#8B0000;color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase}',
     '.sg tbody th{font:700 16px "Playfair Display",Georgia,serif;color:#8B0000}',
     '.sg ol{margin:0;padding-left:20px;line-height:1.6;font-size:15px}',
-    '.guide-btn{background:none;border:0;padding:6px 0;color:#D4AF37;font:700 11px Lato,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;cursor:pointer;align-self:flex-start}',
+    '.guide-btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:42px;padding:9px 16px;background:rgba(212,175,55,.12);border:1px solid #D4AF37;border-radius:999px;color:#F1D27A;font:700 11px Lato,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}.guide-btn svg{width:18px;height:18px;flex:none}.guide-btn:hover{background:#D4AF37;color:#2a0000}',
     '@media (prefers-reduced-motion:reduce){.ck,.sg{transition:none}.ck-btn{transition:none}}'
   ].join('');
   document.head.appendChild(css);
