@@ -47,6 +47,10 @@
     '.ck-done{grid-column:1/-1;text-align:center;display:grid;justify-items:center;gap:14px;padding:30px 0}',
     '.ck-done .seal{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:#8B0000;color:#D4AF37;font:700 34px "Playfair Display",Georgia,serif}',
     '.ck-done p{margin:0;max-width:52ch;line-height:1.6}',
+    '.ck-got{list-style:none;margin:4px 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}',
+    '.ck-got li{width:150px;background:#fff;border:1px solid rgba(201,168,76,.55);padding:8px 8px 12px;text-align:center}',
+    '.ck-got img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 15%;background:#efe7da;margin-bottom:8px}',
+    '.ck-got b{display:block;font:600 14px/1.3 "Playfair Display",Georgia,serif;color:#6B0000}.ck-got small{display:block;margin-top:4px;color:#7a5a4a;font-size:12px}',
     '.ck-done .num{font:700 22px "Playfair Display",Georgia,serif;color:#8B0000;letter-spacing:.06em}',
     /* guide des tailles */
     '.sg{position:fixed;inset:0;z-index:85;display:grid;place-items:center;background:rgba(30,0,0,.6);padding:16px;opacity:0;transition:opacity .2s ease}',
@@ -244,6 +248,7 @@
     var nb = panier.length;
     cadre(0, '<div class="ck-done"><div class="seal" aria-hidden="true">✓</div><h2 style="margin:0">Merci ' + esc(etat.prenom) + ' !</h2>' +
       '<p class="num">Commande ' + num + '</p>' +
+      '<ul class="ck-got" aria-label="Votre commande">' + panier.map(function (a) { return '<li><img src="' + esc(a.img) + '" alt="' + esc(a.nom) + '"><b>' + esc(a.nom) + '</b><small>Taille ' + esc(a.taille) + ' · ' + euros(a.prix) + '</small></li>'; }).join('') + '</ul>' +
       '<p>Votre précommande de <b>' + nb + (nb > 1 ? ' pièces' : ' pièce') + '</b> (' + euros(tot) + ') est confirmée. Un e-mail de confirmation sera envoyé à <b>' + esc(etat.mail) + '</b>.</p>' +
       '<p>Votre pièce va être brodée dans notre atelier. Expédition sous 4 à 6 semaines (délai indicatif).</p>' +
       '<p style="font-size:13px;color:#7a5a4a">Maquette : aucune commande réelle, aucun e-mail envoyé.</p>' +
