@@ -109,7 +109,8 @@
     '<li><b>Nous brodons votre pièce</b><span>Elle est confectionnée et brodée dans notre atelier partenaire.</span></li>' +
     '<li><b>Vous la recevez</b><span>Expédition sous 4 à 6 semaines (délai indicatif), avec un e-mail de suivi.</span></li>' +
     '</ol>' +
-    '<p style="margin-top:16px">Une question sur votre commande ? Écrivez-nous depuis la page Contact.</p></div>';
+    '<p style="margin-top:16px"><a href="precommande.html">Tout savoir sur la précommande →</a></p>' +
+    '<p>Une question sur votre commande ? Écrivez-nous depuis la page Contact.</p></div>';
   document.body.appendChild(pc);
   var pcPrev = null;
   function precoOuvrir() { pcPrev = document.activeElement; pc.hidden = false; requestAnimationFrame(function () { pc.classList.add('on'); pc.querySelector('.sg-x').focus(); }); }
