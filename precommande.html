@@ -118,6 +118,7 @@ a{color:inherit}
 .steps strong{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,24px);color:var(--bordeaux)}
 .steps li>span:last-child{font-size:15px;line-height:1.6;max-width:30ch;color:var(--bordeaux-dark)}
 .delai{display:inline-block;margin-top:6px;padding:5px 12px;background:var(--bordeaux);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--white)}
+.suivi{max-width:62ch;margin:clamp(28px,4vw,44px) auto 0;padding:16px 22px;border:1px solid rgba(201,168,76,.55);background:var(--cream);font-family:var(--script);font-style:italic;font-size:clamp(18px,1.8vw,21px);line-height:1.5;color:var(--bordeaux)}
 .frise.wait .steps li{opacity:0;transform:translateY(14px)}
 .frise.wait .steps{--p:0}
 @media (max-width:700px){.steps{grid-template-columns:minmax(0,1fr);gap:34px}.steps::before{display:none}}
@@ -214,9 +215,10 @@ a{color:inherit}
     <h2 id="t3">Comment ça se passe en pratique ?</h2>
     <ol class="steps">
       <li><span class="dot" aria-hidden="true"></span><em>Étape 1</em><strong>Vous commandez</strong><span>Vous choisissez votre modèle et votre taille sur notre boutique en ligne, puis validez votre panier en toute sécurité.</span></li>
-      <li><span class="dot" aria-hidden="true"></span><em>Étape 2</em><strong>L'atelier confectionne</strong><span>Votre pièce entre en atelier pour être confectionnée en édition limitée.<br><span class="delai">4 à 6 semaines après la précommande</span></span></li>
+      <li><span class="dot" aria-hidden="true"></span><em>Étape 2</em><strong>L'atelier confectionne</strong><span>Votre pièce entre en atelier pour être confectionnée en édition limitée.<br><span class="delai">Délai : 4 à 6 semaines</span></span></li>
       <li><span class="dot" aria-hidden="true"></span><em>Étape 3</em><strong>Vous recevez</strong><span>Votre pièce vous est livrée directement chez vous, fabriquée spécialement pour vous.</span></li>
     </ol>
+    <p class="suivi">Pendant l'attente, vous n'êtes jamais sans nouvelles : nous vous écrivons à chaque étape — entrée en atelier, broderie, expédition — avec des photos de votre pièce en fabrication. Le délai est indicatif ; en cas de retard, vous êtes prévenue tout de suite.</p>
   </div>
 </section>
 
