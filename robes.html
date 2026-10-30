@@ -72,8 +72,9 @@ a{color:inherit}
 .meta{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light)}
 
 /* Grille produits */
-.grid{max-width:1440px;margin-inline:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,26px);padding-bottom:clamp(56px,7vw,100px)}
-@media (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.grid{max-width:1440px;margin-inline:auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(14px,1.8vw,26px);padding-bottom:clamp(56px,7vw,100px)}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
 .card{display:flex;flex-direction:column;gap:12px;min-width:0;animation:cardIn 800ms var(--ease) both}
 .card:nth-child(1){animation-delay:80ms}.card:nth-child(2){animation-delay:180ms}.card:nth-child(3){animation-delay:280ms}.card:nth-child(4){animation-delay:380ms}
@@ -140,11 +141,24 @@ legend{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--g
   <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> · Collection · Robes</nav>
   <h1>Robes</h1>
   <p>Brodées en petite série, inspirées des broderies slaves d'Europe de l'Est.</p>
-  <span class="meta">4 pièces · Précommande</span>
+  <span class="meta">5 pièces · Précommande</span>
 </header>
 
 <main class="gutter">
   <div class="grid">
+    <article class="card" data-nom="Robe courte lin roses rouges" data-prix="320" data-img="robe-courte-lin-brodee-roses-rouges-slave-hafta.webp">
+      <div class="photo"><img src="robe-courte-lin-brodee-roses-rouges-slave-hafta.webp" alt="Robe courte en lin écru brodée de roses rouges, manches ballon et ceinture nouée" width="800" height="1068"><span class="badge">Nouveau</span></div>
+      <div class="line"><h2>Robe courte lin roses rouges</h2><span class="price">320 €</span></div>
+      <p class="desc">Lin écru, manches ballon brodées de roses rouges, encolure portefeuille et ceinture nouée.</p>
+      <fieldset><legend>Taille</legend>
+        <label class="size"><input type="radio" name="t5" value="XS"><span>XS</span></label><label class="size"><input type="radio" name="t5" value="S"><span>S</span></label><label class="size"><input type="radio" name="t5" value="M"><span>M</span></label><label class="size"><input type="radio" name="t5" value="L"><span>L</span></label><label class="size"><input type="radio" name="t5" value="XL"><span>XL</span></label><label class="size"><input type="radio" name="t5" value="XXL"><span>XXL</span></label>
+      </fieldset>
+      <button class="guide-btn" type="button" onclick="window.shGuide&&shGuide()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></svg>Guide des tailles</button>
+      <p class="err" aria-live="polite"></p>
+      <button class="btn" type="button">Précommander</button>
+      <button class="preco-btn" type="button" onclick="window.shPreco&&shPreco()">Comment marche la précommande ?</button>
+    </article>
+
     <article class="card" data-nom="Robe longue dos nu camel" data-prix="420" data-img="cr-robe-longue-camel.webp">
       <div class="photo"><img src="cr-robe-longue-camel.webp" alt="Robe longue camel au dos nu, manches bouffantes brodées de fleurs rouges, vue de dos" width="600" height="900"><span class="badge">Édition limitée</span></div>
       <div class="line"><h2>Robe longue dos nu camel</h2><span class="price">420 €</span></div>
