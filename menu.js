@@ -39,7 +39,7 @@
   var mm = document.createElement('div');
   mm.className = 'sh-mm'; mm.hidden = true; mm.setAttribute('role', 'dialog'); mm.setAttribute('aria-modal', 'true'); mm.setAttribute('aria-label', 'Menu');
   mm.innerHTML = '<div class="sh-mm-top"><b>SLAVE HAFTA</b><button class="sh-mm-x" type="button" aria-label="Fermer le menu">×</button></div>' +
-    '<ul>' + lien('Accueil', 'index.html') + lien('Notre histoire', 'histoire.html') + '</ul>' +
+    '<ul>' + lien('Accueil', 'index.html') + lien('Notre histoire', 'histoire.html') + lien('La précommande', 'precommande.html') + '</ul>' +
     (cats ? '<h3>La collection</h3><ul class="grid2">' + cats + '</ul>' : '') +
     (caps ? '<h3>Capsule · édition limitée</h3><ul class="grid2">' + caps + '</ul>' : '') +
     '<h3>Contact</h3><ul>' + lien('Nous écrire', '#') + '</ul>';

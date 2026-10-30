@@ -1,2 +1,257 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>SLAVE HAFTA</title><meta http-equiv="refresh" content="0; url=collection.html"><link rel="canonical" href="https://20301050.github.io/SLAVE-HAFTA/collection.html"></head><body><a href="collection.html">Continuer vers la page</a><script src="haut.js"></script>
-</body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KBSCJ3QW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KBSCJ3QW9');
+</script>
+<link rel="icon" href="logo-rond.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La précommande · SLAVE HAFTA</title>
+<meta name="description" content="La précommande SLAVE HAFTA : vos vêtements femme brodés sont fabriqués uniquement à la commande, en édition limitée. Zéro surstock, zéro gâchis.">
+<link rel="canonical" href="https://20301050.github.io/SLAVE-HAFTA/precommande.html">
+<meta property="og:title" content="La précommande · SLAVE HAFTA">
+<meta property="og:description" content="Fabriquer uniquement ce qui est commandé : zéro surstock, zéro gâchis, 100 % d'exclusivité.">
+<meta property="og:image" content="https://20301050.github.io/SLAVE-HAFTA/robe-courte-lin-brodee-roses-rouges-slave-hafta.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap">
+<style>
+
+/* Page catégorie : même charte que l'accueil. Grille de 4 pièces, choix de la taille, précommande vers le panier. */
+:root{
+  --bordeaux:#8B0000; --bordeaux-dark:#6B0000; --ink:#2a0000;
+  --gold:#C9A84C; --gold-light:#D4AF37; --white:#FFFFFF; --cream:#F5F0E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --script:'Cormorant Garamond', Georgia, serif;
+  --body:'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bordeaux);color:var(--white);font-family:var(--body);font-size:15px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* Barre du haut */
+.nav{position:relative;z-index:20;background:var(--bordeaux);border-bottom:1px solid rgba(201,168,76,.25)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:8px;max-width:1440px;margin-inline:auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand span{font-family:var(--display);font-weight:700;letter-spacing:.32em;font-size:17px}
+.right{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.right{gap:10px}}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:var(--white);text-decoration:none;font-size:12px;letter-spacing:.16em}
+.links a:hover,.links a[aria-current]{color:var(--gold)}
+@media (max-width:760px){.links{display:none}}
+.dd{position:relative}
+.dd-btn{font:inherit;font-size:12px;letter-spacing:.16em;color:var(--gold);background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.dd-btn span{font-size:9px;transition:transform .25s ease}
+.dd-btn[aria-expanded="true"] span{transform:rotate(180deg)}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(2,minmax(170px,1fr));gap:28px;padding:24px 28px;background:var(--ink);border:1px solid rgba(201,168,76,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);animation:ddIn 200ms var(--ease)}
+.dd-menu::before{content:"";position:absolute;left:0;right:0;top:-15px;height:15px}
+@keyframes ddIn{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translate(-50%,0)}}
+.dd-t{margin:0 0 10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.dd-menu ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dd-menu ul a{display:block;padding:6px 0;font-family:var(--display);font-size:17px;letter-spacing:.04em;color:var(--cream);text-decoration:none;transition:color .15s ease,transform .2s ease}
+.dd-menu ul a:hover,.dd-menu ul a[aria-current]{color:var(--gold-light);transform:translateX(4px)}
+.dd-all{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.5);padding-bottom:4px}
+
+.dd-btn{color:var(--white)}
+/* Page Précommande : intro crème, bande rouge « pourquoi », frise des 3 étapes, appel à l'action */
+.hero{background:var(--bordeaux-dark);overflow:hidden}
+.hero .in{max-width:1180px;margin-inline:auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(36px,5vw,64px)}
+.hero-txt{display:flex;flex-direction:column;gap:16px;min-width:0}
+.eyebrow{margin:0;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-light)}
+.hero h1{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(36px,5.4vw,70px);line-height:1.08;text-wrap:balance;animation:up 900ms var(--ease) both}
+.hero h1 em{font-family:var(--script);font-style:italic;font-weight:600;color:var(--gold-light)}
+.hero .sub{margin:0;max-width:44ch;font-family:var(--script);font-style:italic;font-size:clamp(20px,2.2vw,26px);line-height:1.4;color:var(--cream);animation:up 900ms var(--ease) 200ms both}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 0;padding:0;list-style:none;animation:up 900ms var(--ease) 350ms both}
+.badges li{padding:8px 14px;border:1px solid rgba(212,175,55,.6);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light)}
+.duo{position:relative;width:100%;max-width:440px;margin-inline:auto;aspect-ratio:4/4.6}
+.duo img{position:absolute;display:block;height:auto;object-fit:cover;border:1px solid rgba(201,168,76,.6);box-shadow:0 26px 50px rgba(0,0,0,.4)}
+.duo .p1{left:0;top:0;width:68%;aspect-ratio:3/4;z-index:2}
+.duo .p2{right:0;bottom:0;width:56%;aspect-ratio:3/4;object-position:50% 20%;z-index:1}
+@media (max-width:760px){.hero .in{grid-template-columns:minmax(0,1fr);text-align:center}.hero-txt{align-items:center}.badges{justify-content:center}.duo{max-width:340px}}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.read{background:var(--cream);color:var(--bordeaux-dark)}
+.col{max-width:1080px;margin-inline:auto;padding-block:clamp(40px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+@media (max-width:760px){.col{grid-template-columns:minmax(0,1fr)}}
+.num{display:block;font-family:var(--script);font-style:italic;font-size:22px;color:var(--gold)}
+.read h2,.why h2,.frise h2{margin:4px 0 16px;font-family:var(--display);font-weight:600;font-size:clamp(28px,3.2vw,40px);line-height:1.2;text-wrap:balance}
+.read h2{color:var(--bordeaux)}
+.read p{margin:0 0 16px;font-size:17px;line-height:1.8}
+.lead{font-family:var(--script);font-size:clamp(21px,2.2vw,26px)!important;line-height:1.5!important;color:var(--bordeaux)}
+.resume{margin:0;padding:clamp(22px,3vw,34px);background:var(--white);border:1px solid rgba(201,168,76,.55);box-shadow:0 0 0 6px var(--cream),0 0 0 7px rgba(201,168,76,.35)}
+.resume h3{margin:0 0 12px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--bordeaux)}
+.resume p{font-size:16px}
+.resume .zero{margin:18px 0 0;font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,23px);line-height:1.4;color:var(--bordeaux)}
+.resume .zero span{color:var(--gold)}
+.why{background:var(--bordeaux);color:var(--cream)}
+.why .in{max-width:1080px;margin-inline:auto;padding-block:clamp(48px,6vw,84px);text-align:center}
+.why h2{color:var(--white)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,36px);margin-top:clamp(20px,3vw,36px);text-align:left}
+@media (max-width:700px){.cards{grid-template-columns:minmax(0,1fr)}}
+.card{padding:clamp(24px,3vw,38px);border:1px solid rgba(212,175,55,.55);background:rgba(42,0,0,.25)}
+.card .ico{width:44px;height:44px;color:var(--gold-light);margin-bottom:14px}
+.card h3{margin:0 0 10px;font-family:var(--display);font-weight:600;font-size:clamp(21px,2.2vw,26px);color:var(--gold-light)}
+.card p{margin:0;font-size:16px;line-height:1.75;color:rgba(245,240,232,.9)}
+.frise{background:var(--white);color:var(--bordeaux-dark)}
+.frise-in{max-width:1080px;margin-inline:auto;padding-block:clamp(48px,6vw,84px);text-align:center}
+.frise h2{color:var(--bordeaux);margin-bottom:clamp(28px,4vw,48px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,40px);position:relative}
+.steps::before{content:"";position:absolute;top:9px;left:16.66%;right:16.66%;height:1px;background:var(--gold);transform:scaleX(var(--p,1));transform-origin:left;transition:transform 1.4s cubic-bezier(.23,1,.32,1)}
+.steps li{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;transition:opacity .7s cubic-bezier(.23,1,.32,1),transform .7s cubic-bezier(.23,1,.32,1)}
+.steps li:nth-child(2){transition-delay:.25s}.steps li:nth-child(3){transition-delay:.5s}
+.dot{width:19px;height:19px;border-radius:50%;background:var(--white);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px var(--white),inset 0 0 0 10px var(--gold);margin-bottom:10px;position:relative;z-index:1}
+.steps em{font-style:normal;font-size:10px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#9c7a2c}
+.steps strong{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,24px);color:var(--bordeaux)}
+.steps li>span:last-child{font-size:15px;line-height:1.6;max-width:30ch;color:var(--bordeaux-dark)}
+.delai{display:inline-block;margin-top:6px;padding:5px 12px;background:var(--bordeaux);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--white)}
+.frise.wait .steps li{opacity:0;transform:translateY(14px)}
+.frise.wait .steps{--p:0}
+@media (max-width:700px){.steps{grid-template-columns:minmax(0,1fr);gap:34px}.steps::before{display:none}}
+.end{background:var(--bordeaux-dark);text-align:center}
+.end .in{max-width:760px;margin-inline:auto;padding-block:clamp(48px,6vw,84px);display:flex;flex-direction:column;align-items:center;gap:18px}
+.end .name{font-family:var(--display);font-weight:700;font-size:clamp(32px,5vw,56px);letter-spacing:.14em;background:linear-gradient(180deg,var(--gold-light),var(--gold) 55%,#9c7a2c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.end p{margin:0;max-width:46ch;font-family:var(--script);font-style:italic;font-size:21px;color:var(--cream)}
+.btn{display:inline-block;padding:14px 30px;font:700 12px var(--body);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--white);border:1px solid var(--gold);transition:background-color .2s ease,color .2s ease}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.end small{font-size:13px;opacity:.75}
+.rv{transition:opacity .6s cubic-bezier(.23,1,.32,1),transform .6s cubic-bezier(.23,1,.32,1)}
+.rv.wait{opacity:0;transform:translateY(24px)}
+.foot{background:var(--ink);border-top:1px solid rgba(201,168,76,.35);text-align:center;padding-block:28px;font-size:12px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.hero h1,.hero .sub,.badges{animation:none}.dd-menu{animation:none}.btn{transition:none}.rv,.steps li,.steps::before{transition:none}.rv.wait,.frise.wait .steps li{opacity:1;transform:none}.frise.wait .steps{--p:1}}
+@media (max-width:760px){.brand span{font-size:14px!important;letter-spacing:.2em!important;white-space:nowrap}.brand img{width:40px!important;height:40px!important}.brand{gap:8px!important}}
+</style>
+</head>
+<body>
+<nav class="nav gutter" aria-label="Navigation principale"><div class="in">
+  <a class="brand" href="index.html"><img src="logo-rond.webp" alt="Logo SLAVE HAFTA" width="46" height="46"><span>SLAVE HAFTA</span></a>
+  <div class="right">
+    <div class="links">
+      <a href="index.html">ACCUEIL</a><div class="dd" id="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-menu">COLLECTION <span aria-hidden="true">▾</span></button>
+        <div class="dd-menu" id="dd-menu" hidden>
+          <div class="dd-col"><p class="dd-t">La collection</p><ul>
+            <li><a href="robes.html">Robes</a></li>
+            <li><a href="tailleurs.html">Tailleurs</a></li><li><a href="tuniques.html">Tuniques</a></li><li><a href="manteaux.html">Manteaux & vestes</a></li><li><a href="jupes.html">Jupes</a></li><li><a href="accessoires.html">Accessoires</a></li>
+          </ul></div>
+          <div class="dd-col"><p class="dd-t">Capsule · édition limitée</p><ul>
+            <li><a href="czapka.html">Czapka</a></li><li><a href="tshirts.html">T-shirts</a></li><li><a href="sport.html">Sport</a></li>
+          </ul><a class="dd-all" href="collection.html">Voir toute la collection →</a></div>
+        </div>
+      </div>
+      <a href="histoire.html">NOTRE HISTOIRE</a><a href="precommande.html" aria-current="page">PRÉCOMMANDE</a><a href="contact.html">CONTACT</a>
+    </div>
+    <button class="sh-cart" type="button" aria-label="Panier, 0 article"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sh-count" hidden>0</span></button>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="in gutter">
+    <div class="hero-txt">
+      <p class="eyebrow">La précommande</p>
+      <h1>Fabriquer uniquement <em>ce qui est commandé</em></h1>
+      <p class="sub">Réservez votre pièce brodée avant même qu'elle ne soit cousue dans notre atelier.</p>
+      <ul class="badges"><li>Zéro surstock</li><li>Zéro gâchis</li><li>100 % exclusivité</li></ul>
+    </div>
+    <div class="duo">
+      <img class="p1" src="robe-courte-lin-brodee-roses-rouges-slave-hafta.webp" alt="Robe courte en lin écru brodée de roses rouges, manches ballon et ceinture nouée, SLAVE HAFTA" width="800" height="1068">
+      <img class="p2" src="robe-lin-brodee-roses-manches-ballon-slave-hafta.webp" alt="Robe en lin écru brodée de roses taupe sur les manches ballon, SLAVE HAFTA" width="800" height="967">
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="read" aria-labelledby="t1">
+  <div class="col gutter">
+    <div>
+      <span class="num">1.</span>
+      <h2 id="t1">C'est quoi, la précommande ?</h2>
+      <p class="lead">Chez SLAVE HAFTA, nous avons fait un choix radical : fabriquer uniquement ce qui est commandé.</p>
+      <p>Contrairement au prêt-à-porter traditionnel qui produit des milliers de vêtements à l'avance — générant invendus, gaspillage et soldes massives —, la précommande vous permet de réserver votre pièce exclusive avant même qu'elle ne soit cousue dans notre atelier.</p>
+    </div>
+    <aside class="resume rv">
+      <h3>Le principe en résumé</h3>
+      <p>Vous commandez et réservez votre taille sur le site, l'atelier lance la fabrication minutieuse de votre vêtement, puis nous vous l'expédions directement.</p>
+      <p class="zero">Zéro surstock <span>✦</span> zéro gâchis <span>✦</span> 100 % d'exclusivité.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="why" aria-labelledby="t2">
+  <div class="in gutter">
+    <span class="num">2.</span>
+    <h2 id="t2">Pourquoi notre marque a choisi ce modèle ?</h2>
+    <div class="cards">
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M24 6c8 6 12 13 12 20a12 12 0 0 1-24 0c0-7 4-14 12-20Z"/><path d="M24 40V22M24 30l-6-5M24 26l5-4"/></svg>
+        <h3>Zéro gâchis, zéro surstock</h3>
+        <p>Chaque veste, tailleur ou robe brodée est produit en série très limitée. Aucun vêtement n'est jeté, détruit ou bradé.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 38 34 14"/><path d="M34 14c2-2 5-2 6 0s0 4-2 5"/><circle cx="37" cy="11" r="1.5"/><path d="M10 38c-2 2-4 1-4-1M16 32l-3-3M22 26l-3-3M28 20l-3-3"/></svg>
+        <h3>Le respect de l'artisanat</h3>
+        <p>Les broderies d'inspiration slave demandent un travail de précision, du temps et un savoir-faire d'exception qu'il faut valoriser au juste rythme.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="frise" aria-labelledby="t3">
+  <div class="frise-in gutter">
+    <span class="num">3.</span>
+    <h2 id="t3">Comment ça se passe en pratique ?</h2>
+    <ol class="steps">
+      <li><span class="dot" aria-hidden="true"></span><em>Étape 1</em><strong>Vous commandez</strong><span>Vous choisissez votre modèle et votre taille sur notre boutique en ligne, puis validez votre panier en toute sécurité.</span></li>
+      <li><span class="dot" aria-hidden="true"></span><em>Étape 2</em><strong>L'atelier confectionne</strong><span>Votre pièce entre en atelier pour être confectionnée sur-mesure ou en édition limitée.<br><span class="delai">4 à 6 semaines en général</span></span></li>
+      <li><span class="dot" aria-hidden="true"></span><em>Étape 3</em><strong>Vous recevez</strong><span>Votre vêtement vous est directement livré chez vous, façonné spécialement pour vous.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="end">
+  <div class="in gutter">
+    <span class="name">SLAVE HAFTA</span>
+    <p>Pièces brodées inspirées du folklore slave — réservées pour vous, fabriquées pour vous.</p>
+    <a class="btn" href="collection.html">Précommander ma pièce</a>
+    <small>Une question ? <a href="contact.html">Écrivez-nous</a></small>
+  </div>
+</section>
+</main>
+
+<footer class="foot gutter">© 2026 SLAVE HAFTA · Marque fictive créée par Malgorzata · <a href="precommande.html">La précommande</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="conditions-generales.html">CGV</a></footer>
+
+<script src="panier.js"></script>
+<script src="commande.js"></script>
+<script src="menu.js"></script>
+<script>
+(function(){
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=[].slice.call(document.querySelectorAll('.rv,.frise'));
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('wait');io.unobserve(e.target)}})},{rootMargin:'0px 0px 10% 0px'});
+    els.forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('wait');io.observe(el)}});
+  }
+  // Menu Collection
+  var dd=document.getElementById('dd'),db=dd.querySelector('.dd-btn'),m=document.getElementById('dd-menu'),tm;
+  function open(){clearTimeout(tm);m.hidden=false;db.setAttribute('aria-expanded','true')}
+  function close(){m.hidden=true;db.setAttribute('aria-expanded','false')}
+  db.addEventListener('click',function(){m.hidden?open():close()});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',function(){tm=setTimeout(close,180)})}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){close();db.focus()}});
+  document.addEventListener('click',function(e){if(!dd.contains(e.target))close()});
+})();
+</script>
+<script src="haut.js"></script>
+</body>
+</html>
